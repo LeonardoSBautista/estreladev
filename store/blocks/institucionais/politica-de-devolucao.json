@@ -1,0 +1,53 @@
+{
+  "store.custom#politica-de-devolucao": {
+    "blocks": [
+      "flex-layout.row#cancelamento-e-devolucoes"
+    ]
+  },
+
+  "flex-layout.row#cancelamento-e-devolucoes": {
+    "props":{
+      "blockClass":"content-institucional"
+    },
+    "children": [
+      "flex-layout.col#cancelamento-e-devolucoes-1",
+      "flex-layout.col#cancelamento-e-devolucoes-2"
+    ]
+  },
+  "flex-layout.col#cancelamento-e-devolucoes-1":{
+    "props":{
+      "width":"22%",
+      "blockClass":"menu-institucional"
+    },
+    "children":[
+      "rich-text#title-menu-institucional",
+      "rich-text#menu-institucional-1",
+      "rich-text#menu-institucional-2",
+      "rich-text#menu-institucional-3-active",
+      "rich-text#menu-institucional-4"
+    ]
+  },
+  "flex-layout.col#cancelamento-e-devolucoes-2":{
+    "props":{
+      "width":"78%",
+      "blockClass":"content-institucional"
+    },
+    "children":[
+      "rich-text#titulo-cancelamento-e-devolucoes-1",
+      "rich-text#conteudo-cancelamento-e-devolucoes-1"
+    ]
+  },
+  "rich-text#titulo-cancelamento-e-devolucoes-1":{
+    "props":{
+      "blockClass":"title-content-institucional",
+      "text":"## Título"
+    }
+  },
+  "rich-text#conteudo-cancelamento-e-devolucoes-1":{
+    "props":{
+      "blockClass":"content-institucional",
+      "text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    }
+  }
+}
+  

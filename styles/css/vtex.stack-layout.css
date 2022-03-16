@@ -1,0 +1,17 @@
+.stackItem--product {
+  width: 100%;
+  position: relative;
+}
+.stackItem--image-shelf{
+  height:210px;
+  display:flex;
+  align-items:center;
+  margin-bottom:4px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+  .stackItem--image-shelf{
+    height:140px;
+  }
+}

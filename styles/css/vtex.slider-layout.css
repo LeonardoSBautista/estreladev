@@ -1,0 +1,105 @@
+.sliderLayoutContainer {
+  justify-content: center;
+}
+.paginationDotsContainer {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.layoutContainer--shelf {
+  margin-top:0;
+  margin-bottom:0;
+}
+.paginationDotsContainer--banner-principal{
+  align-items:center;
+  margin-top:0;
+  margin-bottom:0;
+  bottom:10px;
+}
+.paginationDot--banner-principal,
+.paginationDot--banner-principal:hover{
+  background:#fff;
+  width: 7px !important;
+  height: 7px !important;
+  transform: scale(1) !important;
+}
+.paginationDot--banner-principal--isActive,
+.paginationDot--banner-principal--isActive:hover{
+  background:#EF7D00;
+}
+.slide--shelf {
+  padding-left:0;
+  padding-right:0;
+}
+.sliderLayoutContainer--shelf{
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+.sliderLayoutContainer--banner-principal{
+  padding-left:19px !important;
+  padding-right:19px !important;
+}
+.caretIcon{
+  color:#fff;
+  width:7px;
+  height:13px;
+  display:none;
+}
+.sliderArrows{
+  width:27px;
+  height:27px;
+  border-radius:50%;
+}
+.sliderArrows--banner-principal{opacity:0.7;}
+.sliderLeftArrow{
+  left:10px;
+  background:url(assets/estrela-generic-left-arrow.svg) no-repeat center transparent !important;
+}
+.sliderRightArrow{
+  right:10px;
+  background:url(assets/estrela-generic-right-arrow.svg) no-repeat center transparent !important;
+}
+.sliderLeftArrow--banner-principal{left:20px;}
+.sliderRightArrow--banner-principal{right:20px;}
+.sliderLeftArrow--slider-vantagens{left:-40px;}
+.sliderRightArrow--slider-vantagens{right:-40px;}
+.paginationDot--shelf{
+  width:32px !important;
+  height:7px !important;
+  background:#9696A0;
+  border-radius:5px;
+  padding:0;
+  border:0;
+}
+.paginationDot--shelf--isActive{
+  background:#2B327C;
+}
+.paginationDotsContainer--shelf{
+  margin-top:30px;
+  margin-bottom:51px;
+}
+.slide--slider-banners-bottom{margin:0 12px;}
+.sliderTrack--slider-banners-bottom{justify-content:space-between;}
+.imageElementLink--banner-principal{width:100%;}
+
+.sliderTrackContainer--banner-principal {
+  border-radius: 25px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+  .paginationDotsContainer--shelf{margin-bottom:20px;}
+  .paginationDotsContainer--banner-principal{bottom:5px;}
+  .sliderLeftArrow--shelf,
+  .sliderLeftArrow--slider-banners-bottom,
+  .sliderLeftArrow{left:2px;}
+  .sliderRightArrow--shelf,
+  .sliderRightArrow--slider-banners-bottom,
+  .sliderRightArrow{right:2px;}
+  .sliderLayoutContainer--banner-principal{
+    padding-left:7px !important;
+    padding-right:7px !important;
+  }
+  .sliderLeftArrow--banner-principal{left:7px;}
+  .sliderRightArrow--banner-principal{right:7px;}
+}

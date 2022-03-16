@@ -1,0 +1,11 @@
+<svg id="Componente_81_1" data-name="Componente 81 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27.902" height="27.902" viewBox="0 0 27.902 27.902">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_2638" data-name="Retângulo 2638" width="27.902" height="27.902" fill="#bdbec1" opacity="0.13"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_434" data-name="Grupo 434" clip-path="url(#clip-path)">
+    <path id="Caminho_805" data-name="Caminho 805" d="M0,13.951A13.951,13.951,0,1,0,13.951,0,13.952,13.952,0,0,0,0,13.951" transform="translate(0 0)" fill="#bdbec1"/>
+  </g>
+  <path id="chevron-down-outline" d="M0,5.476,5.476,0l5.476,5.476" transform="translate(17.42 8.5) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+</svg>

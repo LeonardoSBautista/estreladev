@@ -1,0 +1,24 @@
+.buttonText{
+    font-size:13px;
+    font-family:"semibold";
+    text-transform:none;
+    color:#fff;
+}
+.buttonText--buy-button::before{
+    content:"";
+    width:18px;
+    height:13px;
+    background:url(assets/estrela-generic-add-order.svg) no-repeat center transparent;
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:6px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+    .buttonText--buy-button{
+        font-size:9px;
+        display: flex;
+        align-items: center;
+    }
+}

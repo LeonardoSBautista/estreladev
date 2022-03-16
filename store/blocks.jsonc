@@ -1,0 +1,259 @@
+/* Blocks can be defined both on the store/blocks.json file, and in any number of json
+ * files inside the store/blocks directory, with any arbitrary directory structure.
+ *
+ * Additionally, all blocks files can support comments, such as this one, if given the
+ * .jsonc file extension.
+ *
+ * The store/blocks.json file is intended for backwards compatibility, for miscellaneous
+ * blocks, or if the app is simple enough that it doesn't warrant splitting the file.
+ */
+{
+  "store.orderplaced": {
+    "blocks": ["order-placed"]
+  },
+
+  "store.account": {
+    "blocks": ["my-account"],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+
+  "store.login": {
+    "blocks": ["login-content#default"],
+    "props": {
+      "blockClass":"pg-login"
+    }
+  },
+
+  "login-content#default": {
+    "props": {
+      "blockClass":"pg-login",
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+
+  "store.product-review-form": {
+    "blocks": ["product-review-form"]
+  },
+
+  "store.not-found#product": {
+    "blocks": ["rich-text#not-found"]
+  },
+
+  "store.not-found#search": {
+    "blocks": ["rich-text#not-found"]
+  },
+
+  "rich-text#not-found": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**PÁGINA NÃO ENCONTRADA**",
+      "font": "t-heading-1"
+    }
+  },
+  "product-list": {
+    "blocks": [
+      "product-list-content-desktop",
+      "product-list-content-mobile"
+    ]
+  },
+  "product-list-content-desktop": {
+    "children": [
+      "flex-layout.row#list-row.desktop"
+    ]
+  },
+  "rich-text#link-cart":{
+    "props":{
+      "text":"[Ver meu carrinho](/checkout/#/cart)"
+    }
+  },
+  "flex-layout.row#list-row.desktop": {
+    "children": [
+      "flex-layout.col#image.desktop",
+      "flex-layout.col#main-container.desktop"
+    ],
+    "props": {
+      "fullWidth": true,
+      "paddingBottom": "7",
+      "paddingTop": "6",
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": "true"
+    }
+  },
+  "flex-layout.col#image.desktop": {
+    "children": ["product-list-image"],
+    "props": {
+      "marginRight": "6"
+    }
+  },
+  "flex-layout.col#main-container.desktop": {
+    "children": [
+      "flex-layout.row#sub-container.desktop",
+      "flex-layout.row#message.desktop"
+    ],
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.row#sub-container.desktop": {
+    "children": [
+      "flex-layout.col#product-description",
+      "flex-layout.row#price-remove",
+      "flex-layout.col#quantity.desktop"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": "true",
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#quantity.desktop": {
+    "children": [
+      "flex-layout.row#quantity-selector.desktop"
+    ],
+    "props": {
+      "marginLeft": "8"
+    }
+  },
+  "flex-layout.row#price-remove": {
+    "children": [
+      "flex-layout.col#price.desktop",
+      "flex-layout.col#remove-button.desktop"
+    ],
+    "props": {
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.row#quantity-selector.desktop": {
+    "children": ["quantity-selector"],
+    "props": {
+      "preventHorizontalStretch": "true"
+    }
+  },
+  
+  "flex-layout.col#price.desktop": {
+    "children": ["price#desktop"],
+    "props": {
+      "blockClass": "priceWrapper",
+      "marginLeft": "6",
+      "preventHorizontalStretch": "true",
+      "verticalAlign": "middle"
+    }
+  },
+  "price#desktop": {
+    "props": {
+      "textAlign": "right"
+    }
+  },
+  "flex-layout.col#remove-button.desktop": {
+    "children": ["remove-button"],
+    "props": {
+      "marginLeft": "6",
+      "verticalAlign": "middle"
+    }
+  },
+  "flex-layout.row#message.desktop": {
+    "children": ["message#desktop"],
+    "props": {
+      "marginTop": "4"
+    }
+  },
+  "message#desktop": {
+    "props": {
+      "layout": "cols",
+      "text":"teste"
+    }
+  },
+  "product-list-content-mobile": {
+    "children": [
+      "flex-layout.row#list-row.mobile"
+    ]
+  },
+  "flex-layout.row#list-row.mobile": {
+    "children": [
+      "flex-layout.col#image.mobile",
+      "flex-layout.col#main-container.mobile"
+    ],
+    "props": {
+      "fullWidth": true,
+      "paddingBottom": "6",
+      "paddingTop": "5",
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": "true",
+      "blockClass":"minicart-content"
+    }
+  },
+  "flex-layout.col#image.mobile": {
+    "children": [
+      "product-list-image"
+    ],
+    "props": {
+      "blockClass":"minicart-image"
+    }
+  },
+  "flex-layout.col#main-container.mobile": {
+    "children": [
+      "flex-layout.row#top.mobile",
+      "flex-layout.row#quantity-selector.mobile",
+      "flex-layout.row#message.mobile"
+    ],
+    "props": {
+      "width": "grow",
+      "blockClass":"minicart-content"
+    }
+  },
+  "flex-layout.row#top.mobile": {
+    "children": [
+      "flex-layout.col#product-description",
+      "flex-layout.col#remove-button.mobile"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": "true"
+    }
+  },
+  "flex-layout.row#quantity-selector.mobile": {
+    "children": ["price#mobile","quantity-selector"],
+    "props": {
+      "marginTop": "5",
+      "preventHorizontalStretch": "true"
+    }
+  },
+  "flex-layout.row#price.mobile": {
+    "children": ["price#mobile"],
+    "props": {
+      "marginTop": "0",
+      "preventHorizontalStretch": "true"
+    }
+  },
+  "price#mobile": {
+    "props": {
+      "textAlign": "left"
+    }
+  },
+  "flex-layout.col#remove-button.mobile": {
+    "children": ["remove-button"],
+    "props": {
+      "marginLeft": "3"
+    }
+  },
+  "flex-layout.row#message.mobile": {
+    "children": ["message#mobile"],
+    "props": {
+      "marginTop": "3"
+    }
+  },
+  "message#mobile": {
+    "props": {
+      "layout": "rows"
+    }
+  },
+  "quantity-selector":{
+    "props":{
+      "mode":"stepper"
+    }
+  }
+}

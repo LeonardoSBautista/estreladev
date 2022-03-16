@@ -1,0 +1,25 @@
+.summaryItemLabel,
+.price{
+    color:#303030;
+    font-size:14px;
+}
+.summarySmallDisclaimer{
+    font-size:12px;
+    color:#303030;
+    margin:11px 0 14px;
+}
+.summarySmallContent .summaryItemContainer:last-child{
+    border-top:1px solid #ededed;
+    padding-top:15px;
+    margin-top:10px;
+    padding-bottom:0;
+}
+.summarySmallContent .summaryItemContainer:last-child .summaryItemLabel{
+    font-size:19px;
+    font-family:"bold";
+}
+.summarySmallContent .summaryItemContainer:last-child .price{
+    font-size:16px;
+    font-family:"bold";
+    color:#2B327C;
+}

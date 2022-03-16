@@ -1,0 +1,50 @@
+
+.summaryContainer::before{
+  content:"Avaliação: ";
+  display:inline-block;
+  vertical-align:middle;
+  color:#262626;
+  font:13px "semibold";
+  margin-right:6px;
+}
+.summaryTotalReviews{display:none;}
+.reviewsHeading{
+  font:22px "bold";
+  text-transform:uppercase;
+  color:#2B327C;
+  margin:41px 0 27px;
+  padding:0 0 13px;
+  border-bottom:1px solid #E5E5E5;
+}
+.writeReviewContainer{margin-top:0;}
+.loginLink{
+  padding:0;
+  color:#fff;
+  text-decoration:none;
+  background:#2B327C;
+  border-radius:16px;
+  padding:9px 23px;
+  font:11px "semibold";
+  margin:36px 0;
+  display: block;
+  width: fit-content;
+}
+.inlineContainer {
+  margin-left: 0rem;
+}
+.star--filled {
+  color: #FFB100;
+}
+.star--empty {
+  color: #FFB100;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-left:1rem;
+    padding-right:1rem;
+  }
+  .summaryContainer::before{font:10px "semibold";}
+  .summaryContainer{padding:8px 0;}
+}

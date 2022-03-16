@@ -1,0 +1,16 @@
+<svg id="Componente_85_1" data-name="Componente 85 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36.933" height="32.216" viewBox="0 0 36.933 32.216">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_2209" data-name="Retângulo 2209" width="36.933" height="32.216" fill="none" stroke="#2d2d2d" stroke-width="0.4"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_112" data-name="Grupo 112" transform="translate(0 0)">
+    <g id="Grupo_111" data-name="Grupo 111" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="Caminho_590" data-name="Caminho 590" d="M18.517,32.752a16.109,16.109,0,0,1-16.083-15.8.482.482,0,1,1,.964-.019A15.149,15.149,0,0,0,31.8,23.965a.482.482,0,1,1,.844.466,16.125,16.125,0,0,1-14.131,8.321" transform="translate(-0.079 -0.537)" fill="#2d2d2d" stroke="#2d2d2d" stroke-width="0.4"/>
+      <path id="Caminho_591" data-name="Caminho 591" d="M.482,20.234a.482.482,0,0,1-.369-.791l2.359-2.809a.481.481,0,0,1,.678-.059l2.809,2.359a.482.482,0,0,1-.62.738L2.9,17.622.851,20.062a.483.483,0,0,1-.37.172" transform="translate(0 -0.537)" fill="#2d2d2d" stroke="#2d2d2d" stroke-width="0.4"/>
+      <path id="Caminho_592" data-name="Caminho 592" d="M34.238,16.29a.482.482,0,0,1-.482-.472A15.148,15.148,0,0,0,5.351,8.787a.482.482,0,0,1-.845-.466A16.113,16.113,0,0,1,34.72,15.8a.482.482,0,0,1-.472.491h-.01" transform="translate(-0.145 0)" fill="#2d2d2d" stroke="#2d2d2d" stroke-width="0.4"/>
+      <path id="Caminho_593" data-name="Caminho 593" d="M35.13,16.713a.479.479,0,0,1-.31-.113l-2.809-2.358a.482.482,0,0,1,.62-.738l2.44,2.048,2.048-2.44a.482.482,0,1,1,.738.62L35.5,16.541a.478.478,0,0,1-.327.17l-.042,0" transform="translate(-1.038 -0.422)" fill="#2d2d2d" stroke="#2d2d2d" stroke-width="0.4"/>
+    </g>
+  </g>
+  <text id="_48" data-name="48" transform="translate(9.383 20.933)" fill="#2d2d2d" font-size="12" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">48</tspan></text>
+</svg>

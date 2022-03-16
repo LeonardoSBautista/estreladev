@@ -1,0 +1,129 @@
+{
+  "vtex.menu@2.x:menu#institucional": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#nossa-estrela",
+      "menu-item#politica-de-pagamento",
+      "menu-item#politica-de-devolucao",
+      "menu-item#politica-de-privacidade"
+    ]
+  },
+  "menu-item#nossa-estrela": {
+    "props": {
+      "id": "menu-item-nossa-estrela",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nossa-estrela",
+        "noFollow": false,
+        "tagTitle": "Nossa Estrela",
+        "text": "Nossa Estrela"
+      }
+    }
+  },
+  "menu-item#politica-de-pagamento": {
+    "props": {
+      "id": "menu-item-politica-de-pagamento",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/politica-de-pagamento",
+        "noFollow": false,
+        "tagTitle": "Política de Pagamento",
+        "text": "Política de Pagamento"
+      }
+    }
+  },
+  "menu-item#politica-de-devolucao": {
+    "props": {
+      "id": "menu-item-politica-de-devolucao",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/politica-de-devolucao",
+        "noFollow": false,
+        "tagTitle": "Política De Devolução",
+        "text": "Política De Devolução"
+      }
+    }
+  },
+  "menu-item#politica-de-privacidade": {
+    "props": {
+      "id": "menu-item-politica-de-privacidade",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/politica-de-privacidade",
+        "noFollow": false,
+        "tagTitle": "Política de Privacidade",
+        "text": "Política de Privacidade"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#ajuda": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#fale-conosco",
+      "menu-item#politica-de-uso",
+      "menu-item#entrega-e-recebimento"
+    ]
+  },
+  "menu-item#fale-conosco": {
+    "props": {
+      "id": "menu-item-fale-conosco",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/fale-conosco",
+        "noFollow": false,
+        "tagTitle": "Fale Conosco",
+        "text": "Fale Conosco"
+      }
+    }
+  },
+  "menu-item#politica-de-uso": {
+    "props": {
+      "id": "menu-item-politica-de-uso",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/politica-de-uso",
+        "noFollow": false,
+        "tagTitle": "Política de Uso",
+        "text": "Política de Uso"
+      }
+    }
+  },
+  "menu-item#entrega-e-recebimento": {
+    "props": {
+      "id": "menu-item-entrega-e-recebimento",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/entrega-e-recebimento",
+        "noFollow": false,
+        "tagTitle": "Entrega e Recebimento",
+        "text": "Entrega e Recebimento"
+      }
+    }
+  }
+}

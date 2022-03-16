@@ -1,0 +1,190 @@
+.listItem--principais-categorias{
+    padding:0;
+    margin:0 3px 33px;
+}
+.listItem--principais-categorias :global(.vtex-button){
+    border:1px solid transparent;
+    width:200px;
+    height:90px;
+    border-radius:10px;
+    text-align:left;
+    padding:23px 17px;
+    min-height:auto;
+    color:#fff;
+}
+.listItem--principais-categorias :global(.vtex-button__label){
+    border:0;
+    padding:0 !important;
+    margin:0;
+    text-transform:none;
+    font-size:14px;
+    line-height:17px;
+}
+.listItem--principais-categorias-1 :global(.vtex-button){background:#85BEC8;}
+.listItem--principais-categorias-2 :global(.vtex-button){background:#F08020;}
+.listItem--principais-categorias-3 :global(.vtex-button){background:#99C63A;}
+.listItem--principais-categorias-4 :global(.vtex-button){background:#108399;}
+.listItem--principais-categorias-5 :global(.vtex-button){background:#61c59f;}
+.listItem--principais-categorias-6 :global(.vtex-button){background:#e0739a;}
+.listItem--principais-categorias :global(.vtex-button__label)::before{
+    content:"";
+    width:71px;
+    height:55px;
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:14px;
+    background-size:contain !important;
+}
+.listItem--principais-categorias-1 :global(.vtex-button__label)::before{background:url(assets/estrela-abas-categorias-conveniencia.svg) no-repeat center transparent;}
+.listItem--principais-categorias-2 :global(.vtex-button__label)::before{background:url(assets/estrela-abas-categorias-mercearia.svg) no-repeat center transparent;}
+.listItem--principais-categorias-3 :global(.vtex-button__label)::before{background:url(assets/estrela-abas-categorias-panificadoras.svg) no-repeat center transparent;}
+.listItem--principais-categorias-4 :global(.vtex-button__label)::before{background:url(assets/estrela-abas-categorias-restaurantes.svg) no-repeat center transparent;}
+.listItem--principais-categorias-5 :global(.vtex-button__label)::before{background:url(assets/estrela-abas-categorias-bares.svg) no-repeat center transparent;}
+.listItem--principais-categorias-6 :global(.vtex-button__label)::before{background:url(assets/estrela-abas-categorias-docerias.svg) no-repeat center transparent;}
+
+.listItemActive--principais-categorias-1 :global(.vtex-button__label)::before{background:url(assets/estrela-abas-categorias-conveniencia.png) no-repeat center transparent;}
+.listItemActive--principais-categorias-2 :global(.vtex-button__label)::before{background:url(assets/estrela-abas-categorias-mercearia.png) no-repeat center transparent;}
+.listItemActive--principais-categorias-3 :global(.vtex-button__label)::before{background:url(assets/estrela-abas-categorias-panificadoras.png) no-repeat center transparent;}
+.listItemActive--principais-categorias-4 :global(.vtex-button__label)::before{background:url(assets/restaurantes-active.png) no-repeat center transparent;}
+.listItemActive--principais-categorias-5 :global(.vtex-button__label)::before{background:url(assets/bares-active.png) no-repeat center transparent;}
+.listItemActive--principais-categorias-6 :global(.vtex-button__label)::before{background:url(assets/docerias-active.png) no-repeat center transparent;}
+.listItemActive--principais-categorias :global(.vtex-button){background:transparent;}
+.listItemActive--principais-categorias-1 :global(.vtex-button){
+    border-color:#85BEC8;
+    color:#85BEC8;
+}
+.listItemActive--principais-categorias-2 :global(.vtex-button){
+    border-color:#F08020;
+    color:#F08020;
+}
+.listItemActive--principais-categorias-3 :global(.vtex-button){
+    border-color:#99C63A;
+    color:#99C63A;
+}
+.listItemActive--principais-categorias-4 :global(.vtex-button){
+    border-color:#108399;
+    color:#108399;
+}
+.listItemActive--principais-categorias-5 :global(.vtex-button){
+    border-color:#61c59f;
+    color:#61c59f;
+}
+.listItemActive--principais-categorias-6 :global(.vtex-button){
+    border-color:#e0739a;
+    color:#e0739a;
+}
+
+.listContainer--description-modal{
+    padding-bottom:8px;
+    border-bottom:1px solid #D6D6D6;
+    margin-bottom:10px;
+    justify-content:flex-start;
+}
+.listItem--description-modal{
+    margin:0 49px 0 0;
+    padding:0;
+    background:transparent;
+}
+.listItem--description-modal :global(.vtex-button){
+    border:0;
+    padding:0;
+    border-radius:0;
+    width:auto;
+    height:auto;
+    text-align:left;
+    min-height:auto;
+    color:#989898;
+    background:transparent;
+}
+.listItem--description-modal :global(.vtex-button__label){
+    border:0;
+    padding:0 !important;
+    margin:0;
+    text-transform:none;
+    font:19px "semibold";
+    line-height:1;
+}
+.listItemActive--description-modal :global(.vtex-button){
+    background:transparent;
+    color:#2B327C;
+}
+.listItem--description-modal :global(.vtex-button__label)::before{
+    content:"";
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:5px;
+}
+.listItem--description-modal-1 :global(.vtex-button__label)::before{
+    width:16px;
+    height:16px;
+    background:url(assets/estrela-icon-description-inactive.svg) no-repeat center transparent;
+}
+.listItem--description-modal-2 :global(.vtex-button__label)::before{
+    width:12px;
+    height:14px;
+    background:url(assets/estrela-icon-data-inactive.svg) no-repeat center transparent;
+}
+.listItemActive--description-modal-1 :global(.vtex-button__label)::before{
+    background:url(assets/estrela-icon-description-active.svg) no-repeat center transparent;
+}
+.listItemActive--description-modal-2 :global(.vtex-button__label)::before{
+    background:url(assets/estrela-icon-data-active.svg) no-repeat center transparent;
+}
+
+.listItem--principais-categorias-exclude{
+    display: none;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+    .listItem--principais-categorias{
+        padding:0;
+        margin:0 5px 13px;
+    }
+    .listItem--principais-categorias :global(.vtex-button){
+        border:1px solid transparent;
+        width:120px;
+        height:52px;
+        border-radius:13px;
+        text-align:left;
+        padding:15px 9px;
+        min-height:auto;
+        color:#fff;
+    }
+    .listItem--principais-categorias :global(.vtex-button__label){
+        border:0;
+        padding:0 !important;
+        margin:0;
+        text-transform:none;
+        font-size:9px;
+        line-height:12px;
+    }
+    .listItemActive--principais-categorias :global(.vtex-button){background:transparent;}
+    .listItemActive--principais-categorias-1 :global(.vtex-button){
+        border-color:#85BEC8;
+        color:#85BEC8;
+    }
+    .listItemActive--principais-categorias-2 :global(.vtex-button){
+        border-color:#F08020;
+        color:#F08020;
+    }
+    .listItemActive--principais-categorias-3 :global(.vtex-button){
+        border-color:#99C63A;
+        color:#99C63A;
+    }
+    .listItemActive--principais-categorias-4 :global(.vtex-button){
+        border-color:#108399;
+        color:#108399;
+    }
+    .listItemActive--principais-categorias-5 :global(.vtex-button){
+        border-color:#61c59f;
+        color:#61c59f;
+    }
+    .listItemActive--principais-categorias-6 :global(.vtex-button){
+        border-color:#e0739a;
+        color:#e0739a;
+    }
+    .listItem--description-modal{margin:0 10px 0 0;}
+    .listItem--description-modal :global(.vtex-button__label){font: 11px "semibold";}
+    .contentItem--description-modal :global(.vtex-flex-layout-0-x-flexRow--product-specification){padding:0}
+}

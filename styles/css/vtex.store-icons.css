@@ -1,0 +1,19 @@
+.expandIcon {
+  color: #727273;
+}
+.cartIcon{
+  display:none;
+}
+.cartIcon--minicart-empty-state{
+  display:block;
+  width:64px;
+  height:64px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+  .cartIcon{
+    width:14px;
+    height:15px;
+  }
+}

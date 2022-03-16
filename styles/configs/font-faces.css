@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'padrao';
+    src: url(/assets/fonts/Montserrat-Regular.woff), url(assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'semibold';
+    src: url(/assets/fonts/Montserrat-SemiBold.woff), url(assets/fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'bold';
+    src: url(/assets/fonts/Montserrat-Bold.woff), url(assets/fonts/Montserrat-Bold.ttf);
+}

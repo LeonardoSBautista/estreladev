@@ -1,0 +1,45 @@
+.title--related-shelf{display:none;}
+.relatedProducts--related-shelf{
+    margin-bottom:0;
+}
+.arrow{
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: rgb(189, 190, 193) !important;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+}
+.caretIcon--shelf{
+  color: #fff;
+  width:7px;
+  height:13px;
+  display:none;
+}
+.arrowLeft{
+  left:-10px;
+  background:url(assets/estrela-generic-left-arrow.svg) no-repeat center transparent !important;
+}
+.arrowRight{
+  right:-10px;
+  background:url(assets/estrela-generic-right-arrow.svg) no-repeat center transparent !important;
+}
+.dot{
+  width:32px !important;
+  height:7px !important;
+  background:#9696A0;
+  border-radius:5px;
+  padding:0;
+  border:0;
+}
+.dot--isActive--shelf{
+  background:#2B327C;
+}
+.sliderContainer--pdp-similares :global(.vtex-slider-0-x-sliderFrame){justify-content:flex-start;}
+.slide--pdp-similares{padding-left:0;}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+  .arrow{padding:7px;}
+}

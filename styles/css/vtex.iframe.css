@@ -1,0 +1,21 @@
+.container{height:355px;}
+.container--video-institucional{
+    height:509px;
+    margin-bottom:30px;
+}
+.container--form-institucional{
+    height:1700px;
+    margin-bottom:30px;
+    width: 82%;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+    .container{height:213px;}
+    .container--form-institucional{
+        height:2350px;
+        margin-bottom:0;
+        width: 100%;
+        overflow-x:hidden;
+    }
+}

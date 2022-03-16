@@ -1,0 +1,215 @@
+{
+  "store.custom#cadastro": {
+    "blocks": [
+      "flex-layout.row#cadastro"
+    ]
+  },
+
+  "flex-layout.row#cadastro": {
+    "props": {
+      "blockClass": "content-cadastro"
+    },
+    "children": [
+      "flex-layout.col#cadastro"
+    ]
+  },
+
+  "flex-layout.col#cadastro": {
+    "props": {
+      "width": "100%",
+      "blockClass": "content-cadastro-col"
+    },
+    "children": [
+      "rich-text#titulo-cadastro",
+      "rich-text#explica-cadastro",
+      "flex-layout.row#form-cadastro"
+    ]
+  },
+  "rich-text#titulo-cadastro": {
+    "props": {
+      "blockClass": "title-content-institucional",
+      "text": "## Realize seu cadastro",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#explica-cadastro": {
+    "props": {
+      "blockClass": "content-institucional",
+      "text": "Preencha o formulário abaixo para solicitar a aprovação do seu cadastro.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+
+  },
+  "flex-layout.row#form-cadastro": {
+    "props": {
+      "blockClass": "content-cadastro"
+    },
+    "children": [
+      "flex-layout.col#form-cadastro"
+    ]
+  },
+  "flex-layout.col#form-cadastro": {
+    "children": [
+      "form#cadastro"
+    ]
+  },
+  "form#cadastro": {
+    "props": {
+      "blockClass": "formulario-cadastro",
+      "entity": "CL",
+      "schema": "clients"
+    },
+    "children": [
+      "form-input.text#nome",
+      "flex-layout.col#separate",
+      "form-input.text#sobrenome",
+      "flex-layout.col#separate",
+      "form-input.text#email",
+      "flex-layout.col#separate",
+      "form-input.text#telefone",
+      "flex-layout.col#separate",
+      "form-input.text#sexo",
+      "flex-layout.col#separate",
+      "form-input.text#CNPJ",
+      "flex-layout.col#separate",
+      "form-input.text#nomefantasia",
+      "form-input.text#inscricaoestadual",
+      "flex-layout.col#separate",
+      "form-input.text#razao",
+      "flex-layout.col#separate",
+      "form-input.text#telefonecomercial",
+      "flex-layout.col#separate",
+      "form-input.checkbox#empresa",
+      "form-input.checkbox#lgpd",
+      "form-submit#cadastro"
+    ],
+    "blocks": ["form-success#cadastro"]
+  },
+
+
+  "flex-layout.col#separate":{
+    "props":{
+      "blockClass":"separator"
+    }
+  },
+
+  "form-input.text#nome": {
+    "props": {
+      "pointer": "#/properties/firstName",
+      "label": "Nome",
+      "blockClass":"cadastro-input"
+    }
+  },
+  "form-input.text#sobrenome": {
+    "props": {
+      "pointer": "#/properties/lastName",
+      "label": "Sobrenome",
+      "blockClass":"cadastro-input"
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email",
+      "label": "E-mail",
+      "blockClass":"cadastro-input"
+    }
+  },
+  "form-input.text#telefone": {
+    "props": {
+      "pointer": "#/properties/phone",
+      "label": "Telefone",
+      "blockClass":"cadastro-input"
+    }
+  },
+  "form-input.text#sexo": {
+    "props": {
+      "pointer": "#/properties/gender",
+      "label": "Sexo",
+      "blockClass":"cadastro-input"
+    }
+  },
+  "form-input.text#CNPJ": {
+    "props": {
+      "pointer": "#/properties/corporateDocument",
+      "label": "CNPJ",
+      "blockClass":"cadastro-input"
+    }
+  },
+  "form-input.text#nomefantasia": {
+    "props": {
+      "pointer": "#/properties/tradeName",
+      "label": "Nome Fantasia",
+      "blockClass":"cadastro-input"
+    }
+  },
+
+  "form-input.text#inscricaoestadual": {
+    "props": {
+      "pointer": "#/properties/stateRegistration",
+      "label": "Inscrição Estadual",
+      "blockClass":"cadastro-input"
+    }
+  },
+
+  "form-input.text#razao": {
+    "props": {
+      "pointer": "#/properties/corporateName",
+      "label": "Razão Social",
+      "blockClass":"cadastro-input"
+    }
+  },
+  "form-input.text#telefonecomercial": {
+    "props": {
+      "pointer": "#/properties/businessPhone",
+      "label": "Telefone Comercial",
+      "blockClass":"cadastro-input"
+    }
+  },
+  "form-input.checkbox#empresa": {
+    "props": {
+      "pointer": "#/properties/isCorporate",
+      "label": "Confirmo que sou Pessoa Jurídica",
+      "blockClass":"cadastro-checkbox"
+    }
+  },
+
+  "form-input.checkbox#lgpd": {
+    "props": {
+      "pointer": "#/properties/allowTerms",
+      "label": "Concordo com Termos e as Condições do Site",
+      "blockClass":"cadastro-checkbox"
+    }
+  },
+
+  "form-submit#cadastro": {
+    "props": {
+      "label": "Enviar",
+      "blockClass":"cadastro-button"
+    }
+  },
+
+  "form-success#cadastro": {
+    "children": [
+      "rich-text#successSubmitClient",
+      "rich-text#descriptionSubmitClient"
+    ]
+  },
+  "rich-text#successSubmitClient": {
+    "props": {
+      "text": "Cadastro enviado com sucesso!",
+      "blockClass": "success-title",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#descriptionSubmitClient": {
+    "props": {
+      "text": "Aguarde o E-Mail informando sobre a aprovação de seu cadastro",
+      "blockClass": "success-description",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+}

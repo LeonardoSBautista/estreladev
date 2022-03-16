@@ -1,0 +1,32 @@
+.nameContainer--summaryListDesktop {
+  padding-top:4px;
+  padding-bottom:14px;
+  justify-content: start;
+}
+
+.nameContainer--summaryListMobile {
+  padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
+  justify-content: start;
+}
+
+.brandName--summaryListMobile {
+  font-size: 9px;
+  height: 23px;
+  line-height: 11px;
+}
+
+.container--listLayout {
+  max-width: none !important;
+}
+.container--listLayout .element{border:0;}
+
+.image--summaryListDesktop {
+  width: 140px !important;
+}
+
+.image--summaryListMobile {
+  width: 140px !important;
+  min-width: 140px;
+  height: inherit !important;
+}

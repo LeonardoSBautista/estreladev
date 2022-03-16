@@ -1,0 +1,31 @@
+.container{
+    padding:7px 0;
+}
+.homeLink{
+    margin:0;
+    padding:0;
+    line-height:1;
+}
+.arrow{padding-right:0;}
+.termArrow{
+    padding-left:0;
+    padding-right:0;
+}
+.link,
+.term{
+    font-size:10px;
+    color:#000;
+}
+.homeIcon{
+    width:16px;
+    height:16px;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+    .container{
+        padding:7px 20px;
+    }
+}

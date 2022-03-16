@@ -1,0 +1,83 @@
+{
+  "modal-trigger#quickview": {
+    "children": [
+      "rich-text#botao-espiar",
+      "modal-layout#quickview"
+    ],
+    "props": {
+      "blockClass": "quickview"
+    }
+  },
+
+  "rich-text#botao-espiar":{
+    "props":{
+        "blockClass":"botao-espiar",
+        "text":"Espiar"
+    }
+  },
+
+  "modal-layout#quickview": {
+    "children": [
+      "modal-header#quickview",
+      "flex-layout.row#quickview-main-row"
+    ],
+    "props": {
+      "blockClass": "quickview"
+    }
+  },
+
+  "modal-header#quickview": {
+    "props": {
+      "blockClass": "quickview"
+    }
+  },
+
+  "flex-layout.row#quickview-main-row": {
+    "children": [
+      "flex-layout.col#quickview-images",
+      "flex-layout.col#quickview-product-details"
+    ],
+    "props": {
+      "blockClass": "quickviewMainRow"
+    }
+  },
+  
+  "flex-layout.col#quickview-images": {
+    "props": {
+      "width":"40%"
+    },
+    "children": [
+      "product-images#quickview"
+    ]
+  },
+  "product-images#quickview" : {
+    "props": {
+      "blockClass": "quickview",
+      "showNavigationArrows": true,
+      "thumbnailsOrientation":"horizontal"
+    }
+  },
+
+  "flex-layout.col#quickview-product-details": {
+    "children": [
+      "modal-content#quickview"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "quickviewDetails",
+      "width":"60%"
+    }
+  },
+
+  "modal-content#quickview": {
+    "children": [
+      "vtex.store-components:product-brand",
+      "flex-layout.row#product-name",
+      "product-rating-summary",
+      "tab-layout#description-modal"
+    ],
+    "props": {
+      "blockClass": "quickviewContent"
+    }
+  }
+}

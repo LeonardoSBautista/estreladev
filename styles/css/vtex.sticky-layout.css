@@ -1,0 +1,14 @@
+.wrapper.wrapper--sticky-header,
+.container--sticky-header{background:#fff;}
+.wrapper--main-header-mobile--stuck{
+    height:fit-content !important;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+    .container--main-header-mobile{
+        width:100vw;
+        padding:0 10px;
+        background:#fff;
+    }    
+}

@@ -1,0 +1,865 @@
+{
+  "vtex.menu@2.x:menu#category-menu-mobile": {
+    "children": [
+      "flex-layout.row#menu-mobile-top-row",
+      "menu-item#menu-header-10-mobile",
+      "menu-item#menu-header-2-mobile",
+      "menu-item#menu-header-14-mobile",
+      "menu-item#menu-header-4-mobile",
+      "menu-item#menu-header-3-mobile",
+      "menu-item#menu-header-7-mobile",
+      "menu-item#menu-header-8-mobile",
+      "menu-item#menu-header-6-mobile",
+      "menu-item#menu-header-9-mobile",
+      "menu-item#menu-header-15-mobile",
+      "menu-item#menu-header-11-mobile",
+      "menu-item#menu-header-16-mobile",
+      "menu-item#menu-header-12-mobile",
+      "menu-item#menu-header-1-mobile",
+      "menu-item#menu-header-13-mobile"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "category-menu-mobile"
+    }
+  },
+
+  "flex-layout.row#menu-mobile-top-row":{
+    "props":{
+      "blockClass":"menu-mobile-top-row"
+    },
+    "children":[
+      "challenge-block#profile-header-mobile",
+      "rich-text#favoritos-menu-mobile"
+    ]
+  },
+
+  "challenge-block#profile-header-mobile": {
+    "blocks": [
+      "challenge-content#profile-header-mobile",
+      "challenge-fallback#profile-header-mobile"
+    ]
+  },
+
+  "challenge-content#profile-header-mobile": {
+    "children": [
+      "rich-text#perfil-menu-mobile"
+    ]
+  },
+
+  "challenge-fallback#profile-header-mobile": {
+    "children": [
+      "modal-trigger#unauth-menu-mobile"
+    ]
+  },
+
+
+  "modal-trigger#unauth-menu-mobile": {
+    "children": [
+      "rich-text#perfil-menu-mobile-unauth",
+      "modal-layout#signin"
+    ]
+  },
+
+
+  "rich-text#perfil-menu-mobile-unauth":{
+    "props":{
+      "blockClass":["link-menu-mobile","link-menu-mobile-perfil-unauth"],
+      "text":"Perfil"
+    }
+  },
+
+  "rich-text#perfil-menu-mobile":{
+    "props":{
+      "blockClass":["link-menu-mobile","link-menu-mobile-perfil"],
+      "text":"[Perfil](/account#/profile)"
+    }
+  },
+
+
+
+
+
+
+  "rich-text#favoritos-menu-mobile":{
+    "props":{
+      "blockClass":["link-menu-mobile","link-menu-mobile-favoritos"],
+      "text":"[Favoritos](/wishlist)"
+    }
+  },
+
+  "menu-item#menu-header-1-mobile": {
+    "props": {
+      "id": "menu-item-menu-header-1-mobile",
+      "type": "custom",
+      "highlight": false,
+      "blockClass":["menu-header-1","menu-header-1-1"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/petshop",
+        "noFollow": false,
+        "tagTitle": "PetShop",
+        "text": "PetShop"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-1"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-1": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#mobile-1"
+    ]
+  },
+  "flex-layout.row#mobile-1":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#menu-header-1-1"
+    ]
+  },
+
+  "menu-item#menu-header-2-mobile": {
+    "props": {
+      "id": "menu-item-menu-header-2-mobile",
+      "type": "custom",
+      "highlight": false,
+      "blockClass":["menu-header-1","menu-header-1-2"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/alimentos",
+        "noFollow": false,
+        "tagTitle": "Alimentos",
+        "text": "Alimentos"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-2"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-2": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#mobile-2"
+    ]
+  },
+  "flex-layout.row#mobile-2":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#menu-header-2-1",
+      "flex-layout.col#menu-header-2-2",
+      "flex-layout.col#menu-header-2-3",
+      "flex-layout.col#menu-header-2-4",
+      "flex-layout.col#menu-header-2-5"
+    ]
+  },
+  
+  "menu-item#menu-header-3-mobile": {
+    "props": {
+      "id": "menu-item-menu-header-3-mobile",
+      "type": "custom",
+      "highlight": false,
+      "blockClass":["menu-header-1","menu-header-1-3"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/beleza-e-cuidado-pessoal",
+        "noFollow": false,
+        "tagTitle": "Beleza",
+        "text": "Beleza"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-3"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-3": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#mobile-3"
+    ]
+  },
+  "flex-layout.row#mobile-3":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#menu-header-3-1",
+      "flex-layout.col#menu-header-3-2"
+    ]
+  },
+  
+  "menu-item#menu-header-4-mobile": {
+    "props": {
+      "id": "menu-item-menu-header-4-mobile",
+      "type": "custom",
+      "highlight": false,
+      "blockClass":["menu-header-1","menu-header-1-4"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/bebidas-alcoolicas",
+        "noFollow": false,
+        "tagTitle": "Bebidas",
+        "text": "Bebidas"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-4"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-4": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#mobile-4"
+    ]
+  },
+  "flex-layout.row#mobile-4":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#menu-header-4-1",
+      "flex-layout.col#menu-header-4-2"
+    ]
+  },
+  
+  "menu-item#menu-header-6-mobile": {
+    "props": {
+      "id": "menu-item-menu-header-6-mobile",
+      "type": "custom",
+      "highlight": false,
+      "blockClass":["menu-header-1","menu-header-1-6"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/doceria",
+        "noFollow": false,
+        "tagTitle": "Doceria",
+        "text": "Doceria"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-6"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-6": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#mobile-6"
+    ]
+  },
+
+
+
+
+  "flex-layout.row#mobile-6":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#menu-header-6-1"
+    ]
+  },
+  
+  "flex-layout.row#menu-mobile-estrelas":{
+    "props": {"blockClass": "menu-mobile-estrelas"},
+    "children": ["rich-text#saldao-das-estrelas"]
+  },
+  "rich-text#saldao-das-estrelas":{
+    "props": {
+      "blockClass":"saldao-das-estrelas",
+      "text": "[Saldão das Estrelas](/saldao-das-estrelas)"
+    }
+  },
+    
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "blockClass":"menu-principal",
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#desktop-1",
+      "menu-item#desktop-2",
+
+      "menu-item#desktop-4",
+      "menu-item#desktop-5",
+      "menu-item#desktop-6"
+    ]
+  },
+  "menu-item#desktop-1": {
+    "props": {
+      "id": "menu-item-desktop-1",
+      "type": "custom",
+      "highlight": false,
+      "blockClass":"menu-alimentos",
+      "itemProps": {
+        "type": "internal",
+        "href": "/papelaria/artesanato-e-arte",
+        "noFollow": false,
+        "tagTitle": "Artesanato e Arte",
+        "text": "Artesanato e Arte"
+      }
+    }
+  },
+
+  "menu-item#desktop-2": {
+    "props": {
+      "id": "menu-item-desktop-2",
+      "type": "custom",
+      "highlight": false,
+      "blockClass":"menu-bebidas",
+      "itemProps": {
+        "type": "internal",
+        "href": "/bebidas",
+        "noFollow": false,
+        "tagTitle": "Bebidas",
+        "text": "Bebidas"
+      }
+    }
+  },
+
+
+
+  "menu-item#desktop-4": {
+    "props": {
+      "id": "menu-item-desktop-4",
+      "type": "custom",
+      "highlight": false,
+      "blockClass":"menu-higiene",
+      "itemProps": {
+        "type": "internal",
+        "href": "/higiene",
+        "noFollow": false,
+        "tagTitle": "Higiene",
+        "text": "Higiene"
+      }
+    }
+  },
+  
+  "menu-item#desktop-5": {
+    "props": {
+      "id": "menu-item-desktop-5",
+      "type": "custom",
+      "highlight": false,
+      "blockClass":"menu-limpeza",
+      "itemProps": {
+        "type": "internal",
+        "href": "/limpeza",
+        "noFollow": false,
+        "tagTitle": "Limpeza",
+        "text": "Limpeza"
+      }
+    }
+  },
+
+
+
+
+  
+  "menu-item#desktop-6": {
+    "props": {
+      "id": "menu-item-desktop-6",
+      "type": "custom",
+      "highlight": false,
+      "blockClass":"menu-saldao",
+      "itemProps": {
+        "type": "internal",
+        "href": "/saldao-das-estrelas",
+        "noFollow": false,
+        "tagTitle": "Saldão das Estrelas",
+        "text": "Saldão das Estrelas"
+      }
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "menu-item#menu-header-7-mobile": {
+    "props": {
+      "id": "menu-item-menu-header-7-mobile",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["menu-header-1", "menu-header-1-7"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/brinquedos-e-jogos",
+        "noFollow": false,
+        "tagTitle": "Brinquedos",
+        "text": "Brinquedos"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-7"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-7": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#mobile-7"
+    ]
+  },
+  "flex-layout.row#mobile-7":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#menu-header-7-1"
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "menu-item#menu-header-8-mobile": {
+    "props": {
+      "id": "menu-item-menu-header-8-mobile",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["menu-header-1", "menu-header-1-8"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/climatizacao",
+        "noFollow": false,
+        "tagTitle": "Climatização",
+        "text": "Climatização"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-8"
+    ]
+  },
+
+
+  "vtex.menu@2.x:submenu.accordion#mobile-8": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#mobile-8"
+    ]
+  },
+  "flex-layout.row#mobile-8":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#menu-header-8-1"
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "menu-item#menu-header-9-mobile": {
+    "props": {
+      "id": "menu-item-menu-header-9-mobile",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["menu-header-1", "menu-header-1-9"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/eletroportateis",
+        "noFollow": false,
+        "tagTitle": "Eletroportáteis",
+        "text": "Eletroportáteis"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-9"
+    ]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#mobile-9": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#mobile-9"
+    ]
+  },
+  "flex-layout.row#mobile-9":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#menu-header-9-1"
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "menu-item#menu-header-10-mobile": {
+    "props": {
+      "id": "menu-item-menu-header-10-mobile",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["menu-header-1", "menu-header-1-10"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/intalacoes-e-acessorios",
+        "noFollow": false,
+        "tagTitle": "Acessórios",
+        "text": "Acessórios"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-10"
+    ]
+  },
+
+
+
+  "vtex.menu@2.x:submenu.accordion#mobile-10": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#mobile-10"
+    ]
+  },
+  "flex-layout.row#mobile-10":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#menu-header-10-1"
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+  "menu-item#menu-header-11-mobile": {
+    "props": {
+      "id": "menu-item-menu-header-11-mobile",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["menu-header-1", "menu-header-1-11"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/limpeza",
+        "noFollow": false,
+        "tagTitle": "Limpeza",
+        "text": "Limpeza"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-11"
+    ]
+  },
+
+
+
+  "vtex.menu@2.x:submenu.accordion#mobile-11": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#mobile-11"
+    ]
+  },
+  "flex-layout.row#mobile-11":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#menu-header-11-1"
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "menu-item#menu-header-12-mobile": {
+    "props": {
+      "id": "menu-item-menu-header-12-mobile",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["menu-header-1", "menu-header-1-12"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/papelaria",
+        "noFollow": false,
+        "tagTitle": "Papelaria",
+        "text": "Papelaria"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-12"
+    ]
+  },
+
+
+
+  "vtex.menu@2.x:submenu.accordion#mobile-12": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#mobile-12"
+    ]
+  },
+  "flex-layout.row#mobile-12":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#menu-header-12-1"
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "menu-item#menu-header-13-mobile": {
+    "props": {
+      "id": "menu-item-menu-header-13-mobile",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["menu-header-1", "menu-header-1-13"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/utensilios-e-descartaveis",
+        "noFollow": false,
+        "tagTitle": "Utensilios",
+        "text": "Utensilios"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-13"
+    ]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#mobile-13": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#mobile-13"
+    ]
+  },
+  "flex-layout.row#mobile-13":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#menu-header-13-1",
+      "flex-layout.col#menu-header-13-2"
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "menu-item#menu-header-14-mobile": {
+    "props": {
+      "id": "menu-item-menu-header-14-mobile",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["menu-header-1", "menu-header-1-14"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/bebes-e-criancas",
+        "noFollow": false,
+        "tagTitle": "Bebês e Crianças",
+        "text": "Bebês e Crianças"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-14"
+    ]
+  },
+
+
+  "vtex.menu@2.x:submenu.accordion#mobile-14": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#mobile-14"
+    ]
+  },
+  "flex-layout.row#mobile-14":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#menu-header-14-1"
+    ]
+  },
+
+  "menu-item#menu-header-15-mobile": {
+    "props": {
+      "id": "menu-item-menu-header-15-mobile",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["menu-header-1", "menu-header-1-15"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/informatica",
+        "noFollow": false,
+        "tagTitle": "Informatica",
+        "text": "Informática"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-15"
+    ]
+  },
+
+
+
+
+
+  "vtex.menu@2.x:submenu.accordion#mobile-15": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#mobile-15"
+    ]
+  },
+  "flex-layout.row#mobile-15":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#menu-header-15-1"
+    ]
+  },
+
+  "menu-item#menu-header-16-mobile": {
+    "props": {
+      "id": "menu-item-menu-header-16-mobile",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["menu-header-1", "menu-header-1-16"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/Moda",
+        "noFollow": false,
+        "tagTitle": "Moda",
+        "text": "Moda"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-16"
+    ]
+  },
+
+
+  "vtex.menu@2.x:submenu.accordion#mobile-16": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#mobile-16"
+    ]
+  },
+  "flex-layout.row#mobile-16":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#menu-header-16-1"
+    ]
+  }
+}
+

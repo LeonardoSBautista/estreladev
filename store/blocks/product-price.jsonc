@@ -1,0 +1,35 @@
+{
+  "flex-layout.col#selling-price":{
+    "children":[
+      "product-list-price",
+      "flex-layout.row#product-selling-price"
+    ]
+  },
+  "flex-layout.row#product-selling-price":{
+    "props":{
+      "blockClass":"product-selling-price"
+    },
+    "children":[
+      "product-selling-price",
+      "product-installments"
+    ]
+  },
+  "product-selling-price": {
+    "props": {
+      "blockClass": "summary",
+      "message":"Por: {sellingPriceValue}"
+    }
+  },
+  "product-list-price": {
+    "props": {
+      "blockClass": "summary",
+      "message":"De: {listPriceValue}"
+    }
+  },
+  "product-installments": {
+    "props": {
+      "blockClass": "summary",
+      "message":"ou {installmentsNumber}x de {installmentValue}"
+    }
+  }
+}

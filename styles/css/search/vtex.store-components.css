@@ -1,0 +1,11 @@
+.productBrandName--summaryListDesktop,
+.productBrandName--summaryListMobile{
+  text-decoration: none;
+  color: #818181;
+  font-size:13px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+  .productBrandName--summaryListMobile{font-size:10px;}
+}

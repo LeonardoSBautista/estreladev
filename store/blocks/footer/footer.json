@@ -1,0 +1,517 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop",
+      "flex-layout.row#footer-3-desktop",
+      "flex-layout.row#footer-4-desktop"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop":{
+    "children":[
+      "flex-layout.col#footer-1-1-desktop",
+      "flex-layout.col#footer-1-2-desktop"
+    ],
+    "props":{
+      "blockClass":"newsletter",
+      "horizontalAlign":"center",
+      "verticalAlign":"center",
+      "fullWidth":false
+    }
+  },
+  "flex-layout.col#footer-1-1-desktop":{
+    "children":[
+      "rich-text#newsletter-text-1",
+      "rich-text#newsletter-text-2"
+    ]
+  },
+  "rich-text#newsletter-text-1":{
+    "props": {
+      "text": "### Faça parte do nosso clube de ofertas!",
+      "blockClass":"text-newsletter"
+    }
+  },
+  "rich-text#newsletter-text-2":{
+    "props": {
+      "text": "Receba nossas novidades e promoções diretamente em seu e-mail!",
+      "blockClass":"text-newsletter-2"
+    }
+  },
+  "flex-layout.col#footer-1-2-desktop":{
+    "children":[
+      "newsletter-form"
+    ]
+  },
+  "newsletter-form": {
+    "children": [
+      "newsletter-input-name",
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  },
+  "newsletter-input-name":{
+    "props":{
+      "placeholderText":"Informe seu Nome"
+    }
+  },
+  "newsletter-input-email":{
+    "props":{
+      "placeholderText":"e seu E-Mail"
+    }
+  },
+  "newsletter-submit":{
+    "props":{
+      "submitButtonLabel":""
+    }
+  },
+
+  "flex-layout.row#footer-2-desktop": {
+    "children": [
+      "flex-layout.col#footer-2-desktop-1",
+      "flex-layout.col#footer-2-desktop-2",
+      "flex-layout.col#footer-2-desktop-3",
+      "flex-layout.col#footer-2-desktop-4",
+      "flex-layout.col#footer-2-desktop-5"
+    ],
+    "props": {
+      "blockClass": "menu-footer",
+      "fullWidth":false
+    }
+  },
+  "flex-layout.col#footer-2-desktop-1":{
+    "children":[
+      "image#logo-footer",
+      "rich-text#sobre-footer"
+    ],
+    "props": {
+      "blockClass": ["menu-footer","menu-footer-sobre"]
+    }
+  },
+  "image#logo-footer":{
+    "props":{
+      "src":"assets/estrela-footer-about-us-logo.svg",
+      "alt":"Estrela Distribuição"
+    }
+  },
+  "rich-text#sobre-footer":{
+    "props":{
+      "blockClass":"sobre-footer",
+      "text":"Maior atacado distribuidor do Distrito Federal. Atuante no mercado nacional desde 2007, nossos centros de distribuição estão localizados no Distrito Federal e em Feirade Santana na Bahia. Nossos valores institucionais são pautadas em gostar de pessoas, ter atitude de dono, pontualidade, vontade de fazer e ética. [Ler mais](/nossa-estrela)"
+    }
+  },
+
+  "flex-layout.col#footer-2-desktop-2":{
+    "children":[
+      "rich-text#footer-title-1",
+      "vtex.menu@2.x:menu#institucional"
+    ],
+    "props": {
+      "blockClass": ["menu-footer","menu-footer-1"]
+    }
+  },
+  "rich-text#footer-title-1":{
+    "props":{
+      "text":"#### Institucional",
+      "blockClass":"title-footer"
+    }
+  },
+
+  "flex-layout.col#footer-2-desktop-3":{
+    "children":[
+      "rich-text#footer-title-2",
+      "vtex.menu@2.x:menu#ajuda"
+    ],
+    "props": {
+      "blockClass": ["menu-footer","menu-footer-1"]
+    }
+  },
+  "rich-text#footer-title-2":{
+    "props":{
+      "text":"#### Ajuda",
+      "blockClass":"title-footer"
+    }
+  },
+
+  "flex-layout.col#footer-2-desktop-4":{
+    "children":[
+      "rich-text#footer-title-3",
+      "rich-text#footer-telefone",
+      "rich-text#footer-email",
+      "rich-text#footer-horario",
+      "rich-text#footer-subtitle-3",
+      "rich-text#footer-atendimento"
+    ],
+    "props": {
+      "blockClass": ["menu-footer","menu-footer-1","menu-footer-atendimento"]
+    }
+  },
+  "rich-text#footer-title-3":{
+    "props":{
+      "text":"#### Central de Atendimento",
+      "blockClass":"title-footer"
+    }
+  },
+  "rich-text#footer-telefone":{
+    "props":{
+      "text":"![Telefone](assets/estrela-footer-contact-phone.svg) (61) 3404-9200",
+      "blockClass":"content-footer"
+    }
+  },
+  "rich-text#footer-email":{
+    "props":{
+      "text":"![E-mail](assets/estrela-footer-contact-mail.svg) sacdosite@estreladistribuicao.com.br",
+      "blockClass":"content-footer"
+    }
+  },
+  "rich-text#footer-horario":{
+    "props":{
+      "text":"![Horário](assets/estrela-footer-contact-hour.svg) Segunda a Sexta-Feira, das 8h às 19h Aos Sábados das 08h às 12h",
+      "blockClass":"content-footer"
+    }
+  },
+  "rich-text#footer-subtitle-3":{
+    "props":{
+      "text":"##### Atendimento presencial",
+      "blockClass":"title-footer"
+    }
+  },
+  "rich-text#footer-atendimento":{
+    "props":{
+      "text":"![Atendimento](assets/estrela-footer-contact-pin.svg) St. de Indústria QI 22 - Ceilândia, Brasília - DF, 72265-080",
+      "blockClass":"content-footer"
+    }
+  },
+
+  "flex-layout.col#footer-2-desktop-5":{
+    "children":[
+      "rich-text#footer-title-4",
+      "flex-layout.row#footer-2-desktop-5",
+      "flex-layout.row#footer-2-desktop-5-1"
+    ],
+    "props": {
+      "blockClass": "menu-footer"
+    }
+  },
+  "rich-text#footer-title-4":{
+    "props":{
+      "text":"#### Redes Sociais",
+      "blockClass":"title-footer"
+    }
+  },
+  "flex-layout.row#footer-2-desktop-5":{
+    "props":{
+      "blockClass":"social-footer"
+    },
+    "children":[
+      "image#facebook-footer",
+      "image#instagram-footer",
+      "image#linkedin-footer",
+      "image#youtube-footer"
+    ]
+  },
+  "image#facebook-footer":{
+    "props":{
+      "src":"assets/estrela-footer-social-facebook.svg",
+      "alt":"Facebook Estrela",
+      "link":{
+        "url":"https://www.facebook.com/estreladistribuicao01",
+        "openNewTab":true
+      },
+      "blockClass":"facebook-footer"
+    }
+  },
+  "image#instagram-footer":{
+    "props":{
+      "src":"assets/estrela-footer-social-instagram.svg",
+      "alt":"Instagram Estrela",
+      "link":{
+        "url":"https://www.instagram.com/estrela_distribuicao/",
+        "openNewTab":true
+      },
+      "blockClass":"instagram-footer"
+    }
+  },
+  "image#linkedin-footer":{
+    "props":{
+      "src":"assets/estrela-footer-social-linkedin.svg",
+      "alt":"LinkedIn Estrela",
+      "link":{
+        "url":"https://www.linkedin.com/company/estreladistribui%C3%A7%C3%A3o",
+        "openNewTab":true
+      },
+      "blockClass":"linkedin-footer"
+    }
+  },
+  "image#youtube-footer":{
+    "props":{
+      "src":"assets/estrela-footer-social-youtube.svg",
+      "alt":"YouTube Estrela",
+      "link":{
+        "url":"https://www.youtube.com/channel/UC2xV6wCr7s6iK7rcc0nY84A",
+        "openNewTab":true
+      },
+      "blockClass":"youtube-footer"
+    }
+  },
+  "flex-layout.row#footer-2-desktop-5-1":{
+    "props":{
+      "blockClass":"bts-footer"
+    },
+    "children":[
+      "rich-text#footer-2-bt-1",
+      "rich-text#footer-2-bt-2"
+    ]
+  },
+  "rich-text#footer-2-bt-1":{
+    "props":{
+      "text":"[Conheça nosso Blog!](/blog)",
+      "blockClass":"footer-2-bt"
+    }
+  },
+  "rich-text#footer-2-bt-2":{
+    "props":{
+      "text":"[Escola de Negócios](/blog)",
+      "blockClass":"footer-2-bt"
+    }
+  },
+
+  "flex-layout.row#footer-3-desktop":{
+    "props":{
+      "blockClass":"footer-3-desktop"
+    },
+    "children":[
+      "flex-layout.col#footer-3-desktop-1",
+      "flex-layout.col#footer-3-desktop-2",
+      "flex-layout.col#footer-3-desktop-3"
+    ]
+  },
+  "flex-layout.col#footer-3-desktop-1":{
+    "props":{
+      "blockClass":"footer-payments"
+    },
+    "children":[
+      "flex-layout.row#footer-3-desktop-1"
+    ]
+  },
+  "flex-layout.row#footer-3-desktop-1":{
+    "children":[
+      "rich-text#footer-title-5",
+      "image#img-payments-1",
+      "image#img-payments-2",
+      "image#img-payments-3",
+      "image#img-payments-4",
+      "image#img-payments-5",
+      "image#img-payments-6",
+      "image#img-payments-7"
+    ]
+  },
+  "rich-text#footer-title-5":{
+    "props":{
+      "text":"#### Pagamento",
+      "blockClass":"title-footer"
+    }
+  },
+  "image#img-payments-1":{
+    "props":{
+      "src":"assets/estrela-footer-flag-visa.svg",
+      "alt":"Visa",
+      "blockClass":"payments-footer"
+    }
+  },
+  "image#img-payments-2":{
+    "props":{
+      "src":"assets/estrela-footer-flag-mastercard.svg",
+      "alt":"Master",
+      "blockClass":"payments-footer"
+    }
+  },
+  "image#img-payments-3":{
+    "props":{
+      "src":"assets/estrela-footer-flag-amex.svg",
+      "alt":"AMEX",
+      "blockClass":"payments-footer"
+    }
+  },
+  "image#img-payments-4":{
+    "props":{
+      "src":"assets/estrela-footer-flag-elo.svg",
+      "alt":"Elo",
+      "blockClass":"payments-footer"
+    }
+  },
+  "image#img-payments-5":{
+    "props":{
+      "src":"assets/estrela-footer-flag-dinners.svg",
+      "alt":"Dinners",
+      "blockClass":"payments-footer"
+    }
+  },
+  "image#img-payments-6":{
+    "props":{
+      "src":"assets/estrela-footer-flag-mp.svg",
+      "alt":"Mercado Pago",
+      "blockClass":"payments-footer"
+    }
+  },
+  "image#img-payments-7":{
+    "props":{
+      "src":"assets/estrela-footer-flag-pagseguro.svg",
+      "alt":"PagSeguro",
+      "blockClass":"payments-footer"
+    }
+  },
+
+  "flex-layout.col#footer-3-desktop-2":{
+    "props":{
+      "blockClass":"footer-security"
+    },
+    "children":[
+      "flex-layout.row#footer-3-desktop-2"
+    ]
+  },
+  "flex-layout.row#footer-3-desktop-2":{
+    "children":[
+      "rich-text#footer-title-6",
+      "image#img-security-1",
+      "image#img-security-2"
+    ]
+  },
+  "rich-text#footer-title-6":{
+    "props":{
+      "text":"#### Segurança",
+      "blockClass":"title-footer"
+    }
+  },
+  "image#img-security-1":{
+    "props":{
+      "src":"assets/estrela-footer-security-lets.svg",
+      "alt":"Let's Encrypt",
+      "title":"Let's Encrypt",
+      "link":{
+        "url": "https://letsencrypt.org/pt-br/",
+        "openNewTab": true
+      }
+    }
+  },
+  "image#img-security-2":{
+    "props":{
+      "src":"assets/estrela-footer-security-pci.svg",
+      "alt":"VTEX",
+      "title":"VTEX",
+      "link":{
+        "url": "https://vtex.com/br-pt/",
+        "openNewTab": true
+      }
+    }
+  },
+
+  "flex-layout.col#footer-3-desktop-3":{
+    "props":{
+      "blockClass":"footer-waba"
+    },
+    "children":[
+      "image#img-waba"
+    ]
+  },
+  "image#img-waba":{
+    "props":{
+      "src":"assets/estrela-footer-waba.svg",
+      "alt":"Waba",
+      "title":"Waba",
+      "link":{
+        "url": "",
+        "openNewTab": true
+      }
+    }
+  },
+
+  "flex-layout.row#footer-4-desktop": {
+    "children": ["rich-text#footer-bottom"],
+    "props": {
+      "blockClass": "footer-bottom"
+    }
+  },
+  "rich-text#footer-bottom": {
+    "props": {
+      "text": "Copyright 2021 - Estrela Distribuição EIRELI - CNPJ 08.691.096/0001-93 | St. de Indústria QI 22 - Ceilândia, Brasília - DF, 72265-080 Preços, produtos e condições de pagamento exclusivas para o site do Estrela Distribuição, exclusivo para CNPJ, não valendo necessariamente para televendas ou outros canais de vendas, sujeitos à alteração sem aviso prévio. Parcelamento em até 1x nos cartões de crédito. Todas as vendas estão sujeitas à análise e confirmação do departamento de crédito da Estrela Distribuição e de financeiras parceiras. Produtos sujeitos a entrega conforme disponibilidade em estoque físico. Frete grátis para pedidos acima de R$ 150,00.",
+      "blockClass": "footer-bottom"
+    }
+  },
+
+  "footer-layout.mobile": {
+    "children": [
+      "back-to-top-button",
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-1-mobile",
+      "flex-layout.row#footer-2-mobile",
+      "flex-layout.row#footer-3-mobile",
+      "flex-layout.row#footer-4-mobile",
+      "flex-layout.row#footer-4-desktop",
+      "flex-layout.row#footer-5-mobile"
+    ]
+  },
+  "back-to-top-button":{
+    "props":{
+      "display":"caret-icon"
+    }
+  },
+  "flex-layout.row#footer-1-mobile":{
+    "props":{
+      "blockClass":["footer-mobile","footer-mobile-1"]
+    },
+    "children":[
+      "flex-layout.col#footer-2-desktop-2",
+      "flex-layout.col#footer-2-desktop-3"
+    ]
+  },
+  
+  "flex-layout.row#footer-2-mobile":{
+    "props":{
+      "blockClass":"footer-mobile"
+    },
+    "children":[
+      "flex-layout.col#footer-2-desktop-4"
+    ]
+  },
+
+  "flex-layout.row#footer-3-mobile":{
+    "props":{
+      "blockClass":["footer-mobile","footer-mobile-3"]
+    },
+    "children":[
+      "flex-layout.col#footer-2-desktop-5"
+    ]
+  },
+
+  "flex-layout.row#footer-4-mobile":{
+    "props":{
+      "blockClass":["footer-mobile","footer-3-desktop"]
+    },
+    "children":[
+      "flex-layout.col#footer-3-desktop-1",
+      "flex-layout.col#footer-3-desktop-2"
+    ]
+  },
+  
+  "flex-layout.row#footer-5-mobile":{
+    "props":{"blockClass":"logo-waba"},
+    "children":[
+      "image#img-waba-mobile"
+    ]
+  },
+
+  "image#img-waba-mobile":{
+    "props":{
+      "src":"assets/estrela-footer-waba.svg",
+      "alt":"Waba",
+      "title":"Waba",
+      "link":{
+        "url": "",
+        "openNewTab": true
+      }
+    }
+  }
+}

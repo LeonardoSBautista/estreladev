@@ -1,0 +1,129 @@
+{
+  "store.custom#authorization": {
+    "blocks": [
+      "flex-layout.row#fale-conosco"
+    ]
+  },
+
+  "flex-layout.row#fale-conosco": {
+    "props":{
+      "blockClass":"content-institucional"
+    },
+    "children": [
+      "flex-layout.col#fale-conosco-1",
+      "flex-layout.col#fale-conosco-2"
+    ]
+  },
+
+  "flex-layout.col#fale-conosco-1":{
+    "props":{
+      "width":"22%",
+      "blockClass":"menu-institucional"
+    },
+    "children":[
+      "rich-text#title-menu-ajuda",
+      "rich-text#menu-ajuda-1-active",
+      "rich-text#menu-ajuda-2",
+      "rich-text#menu-ajuda-3"
+    ] 
+  },
+  "rich-text#title-menu-ajuda":{
+    "props":{
+      "blockClass":"title-institucional",
+      "text":"### Ajuda"
+    }
+  },
+  "rich-text#menu-ajuda-1":{
+    "props":{
+      "blockClass":["menu-institucional","menu-ajuda-1"],
+      "text":"[Fale Conosco](/fale-conosco)"
+    }
+  },
+  "rich-text#menu-ajuda-1-active":{
+    "props":{
+      "blockClass":["menu-institucional","menu-ajuda-1","menu-institucional-active"],
+      "text":"[Nossa Estrela](/nossa-estrela)"
+    }
+  },
+  "rich-text#menu-ajuda-2":{
+    "props":{
+      "blockClass":["menu-institucional","menu-ajuda-2"],
+      "text":"[Política de Uso](/politica-de-uso)"
+    }
+  },
+  "rich-text#menu-ajuda-2-active":{
+    "props":{
+      "blockClass":["menu-institucional","menu-ajuda-2","menu-institucional-active"],
+      "text":"[Política de Uso](/politica-de-uso)"
+    }
+  },
+  "rich-text#menu-ajuda-3":{
+    "props":{
+      "blockClass":["menu-institucional","menu-ajuda-3"],
+      "text":"[Entrega e Recebimento](/entrega-e-recebimento)"
+    }
+  },
+  "rich-text#menu-ajuda-3-active":{
+    "props":{
+      "blockClass":["menu-institucional","menu-ajuda-3","menu-institucional-active"],
+      "text":"[Entrega e Recebimento](/entrega-e-recebimento)"
+    }
+  },
+
+  "flex-layout.col#fale-conosco-2":{
+    "props":{
+      "width":"78%",
+      "blockClass":"content-institucional"
+    },
+    "children":[
+      "rich-text#titulo-fale-conosco-1",
+      "rich-text#conteudo-fale-conosco-1",
+      "flex-layout.row#form"
+
+    ]
+  },
+  "rich-text#titulo-fale-conosco-1":{
+    "props":{
+      "blockClass":"title-content-institucional",
+      "text":"## Título"
+    }
+  },
+  "rich-text#conteudo-fale-conosco-1":{
+    "props":{
+      "blockClass":"content-institucional",
+      "text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    }
+
+  },
+    "flex-layout.row#form": {
+      "children": [
+        "flex-layout.col#form"
+      ]
+    },
+    "flex-layout.col#form": {
+      "children": [
+        "form"
+      ]
+    },
+    "form": {
+      "props": {
+        "blockClass":"formulario-contato",
+        "entity": "FC",
+        "schema": "contato"
+      },
+      "blocks": ["form-success"]
+    },
+    "form-success": {
+      "children": [
+        "rich-text#successSubmit"
+      ]
+    },
+    "rich-text#successSubmit": {
+      "props": {
+        "text": "#### Formulário enviado com sucesso",
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT"
+      }
+    }
+}
+  

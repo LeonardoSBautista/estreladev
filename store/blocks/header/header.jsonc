@@ -1,0 +1,344 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#1-telemarketing", 
+      "flex-layout.row#1-desktop",
+      "sticky-layout#desktop"
+    ]
+  },
+
+  "flex-layout.row#1-telemarketing": {
+    "children": ["telemarketing"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#1-desktop": {
+    "children": [
+      "challenge-block#notification"
+    ],
+    "props": {
+      "blockClass":"notification",
+      "fullWidth": "true"
+    }
+  },
+
+  "challenge-block#notification": {
+    "blocks": [
+      "challenge-content#notification",
+      "challenge-fallback#notification"
+    ]
+  },
+
+  "challenge-content#notification": {
+    "children": [
+      "login#notification"
+    ]
+  },
+
+  "challenge-fallback#notification": {
+    "children": [
+      "modal-trigger#unauth-top"
+    ]
+  },
+
+  
+  "login#notification":{
+    "props":{
+      "blockClass":"login-notification",
+      "iconLabel": "Bem-vindo! Faça seu Login ou cadastre-se!",
+      "showIconProfile":false,
+      "emailAndPasswordTitle": "Login",
+      "accessCodeTitle": "Receba sua chave por e-mail",
+      "emailPlaceholder": "E-mail",
+      "passwordPlaceholder": "Senha",
+      "showPasswordVerificationIntoTooltip": true,
+      "logInButtonBehavior":"link"
+    }
+  },
+  
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#2-desktop",
+      "flex-layout.row#3-desktop"
+    ]
+  },
+
+  "flex-layout.row#2-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": false
+    },
+    "children": [
+      "vtex.menu@2.x:menu#menu-header-trigger",
+      "logo#desktop",
+      "search-bar",
+      "rich-text#wishlist-header",
+      "minicart.v2",
+      "challenge-block#profile-header"
+    ]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Estrela",
+      "href": "/",
+      "url": "assets/logo-estrela.svg",
+      "width": "205"
+    }
+  },
+  "rich-text#wishlist-header":{
+    "props":{
+      "blockClass":["links-header","wishlist-header"],
+      "text":"[Favoritos](/wishlist)"
+    }
+  },
+
+  "challenge-block#profile-header": {
+    "blocks": [
+      "challenge-content#profile-header",
+      "challenge-fallback#profile-header"
+    ]
+  },
+
+  "challenge-content#profile-header": {
+    "children": [
+      "rich-text#profile-header"
+    ]
+  },
+
+  "challenge-fallback#profile-header": {
+    "children": [
+      "modal-trigger#unauth"
+    ]
+  },
+
+
+  "rich-text#profile-header":{
+    "props":{
+      "blockClass":["links-header","profile-header"],
+      // "text":"[Perfil](/account#/profile)"
+      "text": "[Perfil](/account)"
+    }
+  },
+
+
+  "modal-trigger#unauth-top": {
+    "children": [
+      "rich-text#notification-unauth",
+      "modal-layout#signin"
+    ]
+  },
+
+  "rich-text#notification-unauth":{
+    "props": {
+      "blockClass":"login-notification",
+      "text": "Cadastre-se para visualizar nossos preços",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "modal-trigger#unauth": {
+    "children": [
+      "rich-text#profile-header-unauth",
+      "modal-layout#signin"
+    ]
+  },
+
+  "rich-text#profile-header-unauth": {
+    "props": {
+      "blockClass": ["links-header", "profile-header"],
+      // "text":"[Perfil](/account#/profile)",
+      "text": "[Perfil](/cadastro)"
+    }
+  },
+
+  "modal-layout#signin":{
+    "children":[
+      "logo#signin",
+      "rich-text#signin",
+      "rich-text#haveaccount",
+      "rich-text#nothaveaccount"
+    ],
+    "props": {
+      "blockClass": ["login-modal"]
+    }
+  },
+
+  "rich-text#signin": {
+    "props": {
+      "text": "Seja Bem-Vindo! Já é cadastrado?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["login-text"]
+    }
+  },
+
+  "logo#signin":{
+    "props": {
+      "title": "Estrela",
+      "url": "assets/logo-estrela.svg",
+      "width": "205",
+      "blockClass": ["login-logo"]
+    }
+  },
+
+  "rich-text#haveaccount":{
+    "props":{
+      "text":"[Já sou cadastrado](/login)",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":["signin-button"]
+    }
+  },
+
+  "rich-text#nothaveaccount":{
+    "props":{
+      "text":"[Quero me cadastrar](/cadastro)",
+      "textAlign": "CENTER",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":["signin-button"]
+    }
+  },
+  
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "placeholder": "Buscar produtos, marcas e muito mais!"
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "props":{
+      "maxSuggestedProducts":2,
+      "productLayout":"HORIZONTAL"
+    },
+    "blocks": [
+      "product-summary"
+    ]
+  },
+  "login":{
+    "props":{
+      "iconLabel": "Entre ou cadastre-se",
+      "showIconProfile":true,
+      "optionsTitle":"Acesse sua conta",
+      "emailAndPasswordTitle": "Login",
+      "accessCodeTitle": "Receba sua chave por e-mail",
+      "emailPlaceholder": "E-mail",
+      "passwordPlaceholder": "Senha",
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "main-menu",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": false
+    },
+    "children": [
+      "flex-layout.col#category-menu"
+    ]
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+
+  "header-layout.mobile": {
+    "children": [
+      "flex-layout.row#1-desktop",
+      "sticky-layout#1-mobile"
+    ]
+  },
+  "sticky-layout#1-mobile": {
+    "props": {
+      "blockClass":"main-header-mobile"
+    },
+    "children": [
+      "flex-layout.row#2-mobile",
+      "flex-layout.row#3-mobile"
+    ]
+  },
+  "flex-layout.row#2-mobile": {
+    "children": [
+      "drawer#menu-mobile",
+      "logo#mobile",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile-1",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#3-mobile":{
+    "children": [
+      "search-bar"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile-2",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer#menu-mobile": {
+    "props":{
+      "orientation": "vertical"
+    },
+    "blocks":[
+      "drawer-header#my-drawer"
+    ],
+    "children": [
+      "vtex.menu@2.x:menu#category-menu-mobile"
+    ]
+  },
+  "drawer-header#my-drawer":{
+    "children":[
+      "drawer-close-button"
+    ]
+  },
+  "drawer-close-button":{
+    "props":{
+      "type":"filled",
+      "text": "X"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Estrela",
+      "href": "/",
+      "url": "assets/logo-estrela.svg",
+      "width": "132"
+    }
+  },
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  }
+}

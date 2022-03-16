@@ -1,0 +1,9 @@
+.tileListItem{display: block;}
+.biggy-autocomplete-wrapper{width:568px;}
+.itemListTitle{color:#212121;}
+.itemListLinkTitle{color:#7B7979}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+    .biggy-autocomplete-wrapper{width:93vw;}
+}

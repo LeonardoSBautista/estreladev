@@ -1,0 +1,59 @@
+.wishlistIconContainer--bt-wishlist{
+    position:absolute;
+    top:14px;
+    right:5px;
+    z-index:9;
+}
+.wishlistIconContainer--bt-wishlist :global(.vtex-button),
+.wishlistIconContainer--bt-wishlist :global(.vtex-button__label){
+    margin:0;
+    padding:0 !important;
+    border:0;
+    background:transparent;
+    min-height:fit-content;
+}
+.iconSize{
+    width:25px !important;
+    height:25px !important;
+    background:url(assets/estrela-add-wishlist-list-page.svg) no-repeat center #cbcbcb !important;
+    border-radius:50%;
+}
+.iconSize.fill{
+    background:url(assets/estrela-add-wishlist-list-page.svg) no-repeat center #eb840e !important;
+}
+.wishlistIconContainer--bt-wishlist-list :global(.vtex-button){
+    border:0;
+    width:100%;
+    min-height:fit-content;
+}
+.wishlistIconContainer--bt-wishlist-list :global(.vtex-button__label){
+    padding:6px !important;
+    background:#C9C9C9;
+    border-radius:10px;
+    text-transform:none;
+}
+.wishlistIconContainer--bt-wishlist-list :global(.vtex-button__label)::after{
+    content:"Adicionar aos favoritos";
+    display:inline-block;
+    vertical-align:middle;
+    font:12px "semibold";
+    color:#fff;
+    margin-left:10px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+    .wishlistIconContainer--bt-wishlist{
+        top:5px;
+    }
+    .wishlistIcon--bt-wishlist-list{
+        width:15px !important;
+        height:15px !important;
+    }
+    .wishlistIconContainer--bt-wishlist-list :global(.vtex-button__label)::after{
+        font:9px "semibold";
+    }
+    .wishlistIconContainer--bt-wishlist-list :global(.vtex-button__label){
+        padding:3px !important;
+    }
+}

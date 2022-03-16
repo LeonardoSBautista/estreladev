@@ -1,0 +1,13 @@
+.link--title-padrao{
+    color:#2B327C;
+    font-size:28px;
+    text-decoration:none;
+    text-align:center;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+    .link--title-padrao{
+        font-size:25px;
+    }
+}

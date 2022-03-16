@@ -1,0 +1,126 @@
+.drawerContainer{z-index:12;}
+.drawerTitleOuterContainer,
+.removeAllWrapper,
+.expandCollapseButton{display:none;}
+.compareProductButtonWrapper{margin:0;}
+.comparisonButtons{justify-content:center;}
+.compareProductButtonWrapper :global(.vtex-button){
+    font-size: 0;
+    border: 0;
+    background: #6EDA2C;
+    border-radius: 9px;
+    min-height:fit-content;
+}
+
+
+.title--grouped-product-specifications {
+    color: #303030;
+    font-size: 14px;
+}
+
+
+.compareProductButtonWrapper :global(.vtex-button__label){
+    text-transform: none;
+    color: #fff;
+    padding:0 !important;
+    margin:0;
+}
+.compareProductButtonWrapper :global(.vtex-button__label)::before{
+    content:"Comparar";
+    font-size: 13px;
+    font-family: "semibold";
+    display:block;
+    padding:10px 30px;
+}
+.productSelectorContainer :global(.vtex-checkbox__label){
+    font-size:0;
+}
+.productSelectorContainer :global(.vtex-checkbox__label)::before{
+    content:"Comparar";
+    color:#707070;
+    font-size:10px;
+    display:inline-block;
+    vertical-align:middle;
+}
+.productSelectorContainer :global(.vtex-checkbox__inner-container){
+    border:1px solid #ccc;
+    width: 12px;
+    height: 12px;
+    margin-right:5px;
+}
+.productSelectorContainer :global(.vtex-checkbox__box-wrapper){
+    width: 12px;
+    height: 12px;
+}
+.productSelectorContainer :global(.vtex-checkbox__container){margin-right:0;}
+.productSelectorContainer :global(.vtex__icon-check){
+    width: 8px;
+    height: 8px;
+}
+.productSelectorContainer{
+    display: inline-block;
+    width: fit-content;
+}
+.productSelectorContainer :global(.vtex-checkbox__line-container){
+    z-index:11;
+}
+.pageContainer{
+    max-width:1245px;
+    margin-top:20px;
+}
+.removeAllItemsButtonWrapper :global(.vtex-button__label){font-size:0 !important;}
+.removeAllItemsButtonWrapper :global(.vtex-button__label)::before{
+    content:"Remover todos";
+    font: 12px "semibold";
+}
+.productSummaryRowContainer{
+    max-width:1245px;
+    padding:0;
+    display:flex;
+    margin-top:0;
+}
+.productSummaryRowContainer :global(.vtex-slider-layout-0-x-sliderLayoutContainer--comparison-page),
+.rowContainer :global(.vtex-slider-layout-0-x-sliderLayoutContainer),
+.productSummaryRowContainer :global(.vtex-slider-layout-0-x-slideChildrenContainer),
+.productSummaryRowContainer :global(.vtex-slider-layout-0-x-slide),
+.rowContainer :global(.vtex-slider-layout-0-x-slide){
+    font-size: 13px;
+    color: #303030;
+    font-family: 'padrao';
+    text-align: center;
+}
+.rowContainer :global(.vtex-slider-layout-0-x-slide){
+    width:100% !important;
+    max-width:220px !important;
+}
+.showDifferencesContainer :global(.vtex-checkbox__label){font-size:0;}
+.showDifferencesContainer :global(.vtex-checkbox__label)::before{
+    content:"Mostrar apenas as diferenças";
+    font: 12px "semibold";
+    color: #313131;
+}
+.fieldNameCol{
+    width: 15%!important;
+    color: black;
+    font-family: 'semibold';
+    font-size: 12px;
+    margin-left: 7px;
+}
+.productSummaryRowContainer :global(.vtex-product-summary-2-x-nameContainer){justify-content:flex-start;}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+    .pageContainer,
+    .productSummaryRowContainer{
+        max-width:100vw;
+    }
+    .productSummaryRowContainer{flex-direction:column;}
+    .pageContainer{
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .productSummaryRowContainer :global(.vtex-slider-layout-0-x-sliderLayoutContainer--comparison-page){width:100%;}
+    .fieldNameCol{
+        min-width:100px;
+    }
+}

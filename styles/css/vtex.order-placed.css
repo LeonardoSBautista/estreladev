@@ -1,0 +1,131 @@
+.orderPlacedWrapper{
+    max-width:1245px;
+    margin:0 auto;
+}
+.confirmationTitle{
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    color: #2B327C;
+}
+.confirmationMessage{
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: #212121;
+}
+.section--confirmation{
+    margin-bottom:20px;
+}
+.noticesList{
+    background-color:#F6F5F4;
+    padding:20px 0;
+}
+.noticeListItem{
+    border:0;
+    padding:10px 0;
+    margin:0 auto;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: #212121;
+}
+.orderNumber,
+.packageDeliveryTitle{
+    font-weight: bold;
+    font-size: 22px;
+    color: #2B327C;
+    margin-bottom:28px;
+}
+.updateOrderButton :global(.vtex-button),
+.myOrdersButton :global(.vtex-button){
+    background-color:transparent;
+    border: 1px solid #2B327C;
+    border-radius:30px;
+}
+.updateOrderButton :global(.vtex-button__label),
+.myOrdersButton :global(.vtex-button__label){
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: #2B327C;
+    text-transform:capitalize;
+}
+.cancelOrderButton :global(.vtex-button){
+    background-color:transparent;
+    border: 1px solid #EE4949;
+    border-radius:30px;
+}
+.cancelOrderButton :global(.vtex-button__label){
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: #EE4949;
+    text-transform:capitalize;
+}
+.orderDatetime,
+.orderSoldBy,
+.customerInfoListName,
+.customerInfoListEmail,
+.customerInfoListDocument,
+.customerInfoListPhone,
+.paymentGroup,
+.paymentValue,
+.packageShippingEstimate,
+.packageSLA,
+.addressContainer{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #212121;
+    padding:0;
+    margin:0;
+}
+.productInfoColumn{justify-content:flex-start;}
+.productName{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #212121;
+    margin-bottom:10px;
+}
+.productQuantity{
+    font-weight: normal;
+    font-size: 14px;
+    color: #212121;
+}
+.productPrice{
+    font-weight: bold;
+    font-size: 14px;
+    color: #2B327C;
+}
+.section--paymentMethods,
+.section--deliveryPackages,
+.section--pickupPackages{border:0;}
+.package--delivery{margin:20px 0 0;}
+.totalList{margin-bottom:30px;}
+.totalListItem{padding:20px 10px;}
+.totalListItem--Items,
+.totalListItem--Discounts,
+.totalListItem--Shipping{border-bottom:1px solid #D7D7D7;}
+.totalListItemLabel,
+.totalListItemValue{
+    font-weight: 400;
+    font-size: 14px;
+    color: #212121;
+}
+.totalList .totalListItem:last-child .totalListItemLabel{
+    font-weight: bold;
+    font-size: 22px;
+    color: #212121;
+}
+.totalList .totalListItem:last-child .totalListItemValue{
+    font-weight: bold;
+    font-size: 22px;
+    color: #2B327C;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+    .orderPlacedWrapper{max-width:100vw;}
+}

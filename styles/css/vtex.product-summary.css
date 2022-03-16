@@ -1,0 +1,94 @@
+.nameContainer {
+  justify-content: flex-start;
+  padding-top:3px;
+  padding-bottom:8px;
+}
+.brandName{
+  font-family:"semibold";
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #313131;
+  display:block;
+  height:30px;
+  overflow:hidden;
+  line-height:15px;
+}
+
+.productBrand::first-letter{
+  text-transform:uppercase;
+}
+.productBrand--summaryListDesktop{
+  font-size:13px;
+  height:32px;
+}
+.productBrandName{
+  color:#818181;
+  font-size:13px;
+  line-height:1;
+  display:block;
+}
+.container{
+  text-align: start;
+  border-radius:0;
+  margin:0;
+  max-width:271px !important;
+}
+.imageWrapper{
+  text-align: center;
+}
+.element{
+  padding:9px;
+  border: 1px solid #DCDCDC;
+  border-radius: 4px;
+  position:relative;
+}
+.imageNormal{
+  object-fit: fill !important;
+}
+.element :global(.vtex-flex-layout-0-x-flexColChild--botoes-summary) :global(.vtex-button){
+  border:0;
+  background:#6EDA2C;
+  border-radius:9px;
+  display:none;
+}
+.element :global(.vtex-flex-layout-0-x-flexColChild--botoes-summary) :global(.vtex-button):hover{background:#5AAE27;}
+.element:hover :global(.vtex-flex-layout-0-x-flexColChild--botoes-summary) :global(.vtex-rich-text-0-x-container--botao-espiar),
+.element:hover :global(.vtex-flex-layout-0-x-flexColChild--botoes-summary) :global(.vtex-button){display:block;}
+.element :global(.vtex-flex-layout-0-x-flexCol--summaryRightListDesktop) :global(.vtex-flex-layout-0-x-flexColChild--botoes-summary) :global(.vtex-rich-text-0-x-container--botao-espiar),
+.element :global(.vtex-flex-layout-0-x-flexCol--summaryRightListDesktop) :global(.vtex-flex-layout-0-x-flexColChild--botoes-summary) :global(.vtex-button){
+  display:block;
+}
+.element :global(.vtex-flex-layout-0-x-flexCol--summaryRightListDesktop) :global(.vtex-flex-layout-0-x-flexColChild--botoes-summary) :global(.vtex-rich-text-0-x-container--botao-espiar){margin:4px 0;}
+.element--pdp-similares :global(.vtex-stack-layout-0-x-stackItem--image-shelf){
+  height:fit-content;
+  margin:0;
+}
+.element--pdp-similares{
+  align-items:center;
+  justify-content:center;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+  .container{
+    max-width:93% !important;
+  }
+  .brandName {
+    font-size:9px;
+    height:23px;
+    line-height:11px;
+  }
+  .productBrandName{
+    font-size:9px;
+  }
+  .nameContainer{padding-top:3px;}
+  .element :global(.vtex-flex-layout-0-x-flexColChild--botoes-summary) :global(.vtex-button){
+    display:block;
+    min-height:fit-content;
+    border-radius:5px;
+  }
+  .element :global(.vtex-flex-layout-0-x-flexColChild--botoes-summary) :global(.vtex-button__label){
+    padding:6px !important;
+  }
+  .imageStackContainer .imageNormal{max-height:140px !important;}
+}

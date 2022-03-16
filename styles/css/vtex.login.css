@@ -1,0 +1,193 @@
+.button,
+.container :global(.vtex-button),
+.container :global(.vtex-button):hover,
+.container :global(.vtex-button):active,
+.container :global(.vtex-button__label),
+.container :global(.vtex-button__label):hover,
+.container :global(.vtex-button__label):active{
+    background-color:transparent;
+    border:0;
+}
+.container{ margin-right: auto;width: 100%;justify-content: center;}
+.container :global(.vtex-button){min-height:auto;}
+.container :global(.vtex-button__label){
+    padding:0 !important;
+}
+.button{
+    padding:0 0 10px;
+}
+.label{
+    padding:0;
+    color:#fff;
+    font:12px "semibold";
+    text-transform:none;
+}
+.profile{
+    color:#fff;
+    font:12px "semibold";
+    text-transform:none;
+    margin:0;
+    padding:0;
+    max-width:fit-content;
+    display:block !important;
+}
+.loginOptionsContainer{width:100%;}
+.loginOptionsContainer :global(.vtex-button){
+    background-color:transparent;
+    text-transform:none;
+    font-size:13px;
+    border: 1px solid #2B327C;
+    border-radius: 8px;
+    min-height:46px;
+}
+.box{
+    right:auto !important;
+    left:-146px;
+    width:322px;
+    display:none;
+}
+.box::before{
+    content:"";
+    width:24px;
+    height:12px;
+    background:url(assets/arrow-menu.png) no-repeat transparent;
+    display:block;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translate(0,-50%);
+}
+.content{
+    background-color:transparent;
+    padding:20px;
+    text-align:center;
+    margin-bottom:20px;
+    justify-content:space-between;
+}
+.contentContainer{
+    background: #FAFAFA;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+}
+.arrowUp{display:none;}
+.contentForm{
+    min-width:100%;
+    padding:0;
+    width:100%;
+}
+.accountOptions :global(.vtex-button),
+.accountOptions :global(.vtex-button):hover{background-color:transparent !important;}
+.accountOptions :global(.vtex-button__label){padding:10px 0 0 !important;}
+.formTitle{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 30px;
+    color: rgb(48 54 127);
+    margin: 0px 0px 11px;
+    padding: 0px;
+}
+.optionsList,
+.optionsListItem{margin:0;}
+.options{min-width:100%;}
+.accessCodeOptionBtn :global(.vtex-button__label){padding:0 !important;}
+.box :global(.vtex-input-prefix__group),
+.inputContainer :global(.vtex-input-prefix__group){
+    border:1px solid #2B327C;
+    border-radius:8px;
+    background:#fff;
+}
+.box :global(.vtex-styleguide-9-x-input),
+.box :global(.vtex-styleguide-9-x-input)::placeholder,
+.inputContainer :global(.vtex-styleguide-9-x-input),
+.inputContainer :global(.vtex-styleguide-9-x-input)::placeholder{
+    color: #2B327C !important;
+    font-size: 13px;
+    background-color:#fff !important;
+}
+.sendButton :global(.vtex-button),
+.sendButton :global(.vtex-button):focus{
+    background-color:#2B327C;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    border: 1px solid #2B327C;
+    border-radius: 9px;
+    padding: 5px 14px;
+}
+
+.sendButton :global(.vtex-button):hover{
+   background-color: #1c2263; 
+}
+
+
+.box :global(.vtex-button):hover{background-color:transparent;}
+.formFooter{
+    border-top-width:0;
+    align-items:center;
+}
+.forgotPasswordLink{
+    font-size: 0px;
+    text-decoration-line: underline;
+    color: #7B7979;
+}
+
+.forgotPasswordLink:before {
+    content: "Primeiro Acesso? Clique aqui para criar sua senha";
+    font-size: 14px;
+}
+
+.forgotPasswordLink {
+    width: 100%;
+    text-decoration: none;
+    font-weight: 800;
+    color: #2b327c;
+}
+
+.formLinkContainer{
+    margin-top:25px;
+    padding-top:21px;
+    border-top:1px solid #DFDFDF;
+}
+.dontHaveAccount{
+    border: 1px solid #2B327C;
+    border-radius: 9px;
+    color:white;
+    font-size:13px;
+    background-color: #2B327C;
+    display:block;
+    padding:8px;
+    width:100%;
+    line-height:30px;
+    display: none;
+}
+.dontHaveAccount:hover{background-color: #1c2263; opacity: 1.0!important;}
+.loginOptionsContainer,
+.contentForm{
+    width:100%;
+    min-width:100%;
+}
+.contentContainer .loginOptionsContainer,
+.contentContainer .contentForm{
+    width:100%;
+    min-width:100%;
+}
+
+.loginOptionsContainer {
+    display: none!important;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+    .label{display:block !important;}
+    .loginOptionsContainer{margin:10px 0 30px;}
+    .loginOptionsContainer,
+    .contentForm{
+        width:100%;
+        min-width:100%;
+    }
+    .inputContainer :global(.vtex-styleguide-9-x-input){font-size: 16px;}
+    .profileIcon{
+        width:16px;
+        height:16px;
+    }
+}

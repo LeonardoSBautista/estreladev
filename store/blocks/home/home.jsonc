@@ -1,0 +1,1143 @@
+{
+  "store.home": {
+    "blocks": [
+      "flex-layout.row#banner-principal",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#deals",
+      "rich-text#title-categorias",
+      "flex-layout.row#principais-categorias",
+      "flex-layout.row#fornecedores",
+      "flex-layout.row#ofertas",
+      "flex-layout.row#estrelas",
+      "flex-layout.row#ofertas-2",
+      "flex-layout.row#vantagens",
+      "flex-layout.row#lancamentos",
+      "flex-layout.row#parceiros"
+    ]
+  },
+
+  "flex-layout.row#banner-principal": {
+    "children": [
+      "list-context.image-list#banner-principal"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "banner-principal",
+      "title": "Banner Principal"
+    }
+  },
+  "list-context.image-list#banner-principal": {
+    "children": ["slider-layout#banner-principal"],
+    "props": {
+      "height": "376",
+      "images": [{
+          "image": "assets/estrela-banner-full-grande-saldao.png",
+          "mobileImage": "assets/aa.png"
+        },
+        {
+          "image": "assets/estrela-banner-full-grande-saldao.png",
+          "mobileImage": "assets/aa.png"
+        },
+        {
+          "image": "assets/estrela-banner-full-grande-saldao.png",
+          "mobileImage": "assets/aa.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#banner-principal": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showPaginationDots": "always",
+      "showNavigationArrows": "always",
+      "blockClass": "banner-principal",
+      "autoplay": {
+        "timeout": "4000",
+        "stopOnHover": true
+      }
+    }
+  },
+
+  "flex-layout.row#deals": {
+    "props": {
+      "blockClass": "home-deals"
+    },
+    "children": [
+      "flex-layout.col#deals-1",
+      "flex-layout.col#deals-2",
+      "flex-layout.col#deals-3",
+      "flex-layout.col#deals-4",
+      "flex-layout.col#deals-5"
+    ]
+  },
+  "flex-layout.col#deals-1": {
+    "props": {
+      "blockClass": "home-deals"
+    },
+    "children": [
+      "image#deals-1",
+      "rich-text#deals-1"
+    ]
+  },
+  "image#deals-1": {
+    "props": {
+      "blockClass": "image-deals",
+      "src": "assets/estrela-pitbar-fretegratis.svg",
+      "alt": "Frete Grátis"
+    }
+  },
+  "rich-text#deals-1": {
+    "props": {
+      "blockClass": "text-deals",
+      "text": "**Frete Grátis** acima de R$ 150,00"
+    }
+  },
+  "flex-layout.col#deals-2": {
+    "props": {
+      "blockClass": "home-deals"
+    },
+    "children": [
+      "image#deals-2",
+      "rich-text#deals-2"
+    ]
+  },
+  "image#deals-2": {
+    "props": {
+      "blockClass": "image-deals",
+      "src": "assets/estrela-pitbar-entrega.svg",
+      "alt": "Entrega Rápida"
+    }
+  },
+  "rich-text#deals-2": {
+    "props": {
+      "blockClass": "text-deals",
+      "text": "**Entrega Rápida** em até 48 horas"
+    }
+  },
+  "flex-layout.col#deals-3": {
+    "props": {
+      "blockClass": "home-deals"
+    },
+    "children": [
+      "image#deals-3",
+      "rich-text#deals-3"
+    ]
+  },
+  "image#deals-3": {
+    "props": {
+      "blockClass": "image-deals",
+      "src": "assets/estrela-pitbar-umsolugar.svg",
+      "alt": "Encontre tudo"
+    }
+  },
+  "rich-text#deals-3": {
+    "props": {
+      "blockClass": "text-deals",
+      "text": "**Encontre tudo** num único lugar"
+    }
+  },
+  "flex-layout.col#deals-4": {
+    "props": {
+      "blockClass": "home-deals"
+    },
+    "children": [
+      "image#deals-4",
+      "rich-text#deals-4"
+    ]
+  },
+  "image#deals-4": {
+    "props": {
+      "blockClass": "image-deals",
+      "src": "assets/estrela-pitbar-descontos.svg",
+      "alt": "Descontos"
+    }
+  },
+  "rich-text#deals-4": {
+    "props": {
+      "blockClass": "text-deals",
+      "text": "**Descontos** Imperdíveis"
+    }
+  },
+  "flex-layout.col#deals-5": {
+    "props": {
+      "blockClass": "home-deals"
+    },
+    "children": [
+      "image#deals-5",
+      "rich-text#deals-5"
+    ]
+  },
+  "image#deals-5": {
+    "props": {
+      "blockClass": "image-deals",
+      "src": "assets/estrela-pitbar-beneficios.svg",
+      "alt": "Benefícios"
+    }
+  },
+  "rich-text#deals-5": {
+    "props": {
+      "blockClass": "text-deals",
+      "text": "**Benefícios** Clientes 5 Estrelas"
+    }
+  },
+
+  "rich-text#title-categorias": {
+    "props": {
+      "text": "## Principais Categorias",
+      "blockClass": "title-padrao"
+    }
+  },
+  "flex-layout.row#principais-categorias": {
+    "props": {
+      "blockClass": "principais-categorias"
+    },
+    "children": [
+      "tab-layout#principais-categorias"
+    ]
+  },
+  "tab-layout#principais-categorias": {
+    "children": [
+      "tab-list#principais-categorias",
+      "tab-content#principais-categorias"
+    ],
+    "props": {
+      "blockClass": "principais-categorias",
+      "defaultActiveTabId": "principais-categorias-exclude"
+    }
+  },
+  "tab-list#principais-categorias": {
+    "children": [
+      "tab-list.item#principais-categorias-exclude",
+      "tab-list.item#principais-categorias-1",
+      "tab-list.item#principais-categorias-2",
+      "tab-list.item#principais-categorias-3",
+      "tab-list.item#principais-categorias-4",
+      "tab-list.item#principais-categorias-5",
+      "tab-list.item#principais-categorias-6"
+    ],
+    "props": {
+      "blockClass": "principais-categorias"
+    }
+  },
+
+  "tab-list.item#principais-categorias-exclude": {
+    "props": {
+      "tabId": "principais-categorias-1",
+      "label": "Convêniencia/ Distribuídora",
+      "defaultActiveTab": true,
+      "blockClass": ["principais-categorias", "principais-categorias-exclude"]
+    }
+  },
+  "tab-list.item#principais-categorias-1": {
+    "props": {
+      "tabId": "principais-categorias-1",
+      "label": "Convêniencia/ Distribuídora",
+      "blockClass": ["principais-categorias", "principais-categorias-1"]
+    }
+  },
+  "tab-list.item#principais-categorias-2": {
+    "props": {
+      "tabId": "principais-categorias-2",
+      "label": "Mercearia/ Açougue",
+      "blockClass": ["principais-categorias", "principais-categorias-2"]
+    }
+  },
+  "tab-list.item#principais-categorias-3": {
+    "props": {
+      "tabId": "principais-categorias-3",
+      "label": "Panificadoras/ Confeitarias",
+      "blockClass": ["principais-categorias", "principais-categorias-3"]
+    }
+  },
+  "tab-list.item#principais-categorias-4": {
+    "props": {
+      "tabId": "principais-categorias-4",
+      "label": "Restaurantes/ Hotéis",
+      "blockClass": ["principais-categorias", "principais-categorias-4"]
+    }
+  },
+  "tab-list.item#principais-categorias-5": {
+    "props": {
+      "tabId": "principais-categorias-5",
+      "label": "Bares/ Boates",
+      "blockClass": ["principais-categorias", "principais-categorias-5"]
+    }
+  },
+  "tab-list.item#principais-categorias-6": {
+    "props": {
+      "tabId": "principais-categorias-6",
+      "label": "Docerias/ Bomboniere",
+      "blockClass": ["principais-categorias", "principais-categorias-6"]
+    }
+  },
+  "tab-content#principais-categorias": {
+    "children": [
+      "tab-content.item#principais-categorias-1",
+      "tab-content.item#principais-categorias-2",
+      "tab-content.item#principais-categorias-3",
+      "tab-content.item#principais-categorias-4",
+      "tab-content.item#principais-categorias-5",
+      "tab-content.item#principais-categorias-6"
+    ],
+    "props": {
+      "blockClass": "principais-categorias"
+    }
+  },
+  "tab-content.item#principais-categorias-1": {
+    "children": [
+      "flex-layout.row#principais-categorias-1"
+    ],
+    "props": {
+      "tabId": "principais-categorias-1",
+      "blockClass": "principais-categorias-1"
+    }
+  },
+  "tab-content.item#principais-categorias-2": {
+    "children": [
+      "flex-layout.row#principais-categorias-2"
+    ],
+    "props": {
+      "tabId": "principais-categorias-2",
+      "blockClass": "principais-categorias-2"
+    }
+  },
+  "tab-content.item#principais-categorias-3": {
+    "children": [
+      "flex-layout.row#principais-categorias-3"
+    ],
+    "props": {
+      "tabId": "principais-categorias-3",
+      "blockClass": "principais-categorias-3"
+    }
+  },
+  "tab-content.item#principais-categorias-4": {
+    "children": [
+      "flex-layout.row#principais-categorias-4"
+    ],
+    "props": {
+      "tabId": "principais-categorias-4",
+      "blockClass": "principais-categorias-4"
+    }
+  },
+  "tab-content.item#principais-categorias-5": {
+    "children": [
+      "flex-layout.row#principais-categorias-5"
+    ],
+    "props": {
+      "tabId": "principais-categorias-5",
+      "blockClass": "principais-categorias-5"
+    }
+  },
+  "tab-content.item#principais-categorias-6": {
+    "children": [
+      "flex-layout.row#principais-categorias-6"
+    ],
+    "props": {
+      "tabId": "principais-categorias-6",
+      "blockClass": "principais-categorias-6"
+    }
+  },
+  "flex-layout.row#principais-categorias-1": {
+    "children": ["list-context.product-list#principais-categorias-1"]
+  },
+  "list-context.product-list#principais-categorias-1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "flex-layout.row#principais-categorias-2": {
+    "children": ["list-context.product-list#principais-categorias-2"]
+  },
+  "list-context.product-list#principais-categorias-2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "flex-layout.row#principais-categorias-3": {
+    "children": ["list-context.product-list#principais-categorias-3"]
+  },
+  "list-context.product-list#principais-categorias-3": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "flex-layout.row#principais-categorias-4": {
+    "children": ["list-context.product-list#principais-categorias-4"]
+  },
+  "list-context.product-list#principais-categorias-4": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "flex-layout.row#principais-categorias-5": {
+    "children": ["list-context.product-list#principais-categorias-5"]
+  },
+  "list-context.product-list#principais-categorias-5": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "flex-layout.row#principais-categorias-6": {
+    "children": ["list-context.product-list#principais-categorias-6"]
+  },
+  "list-context.product-list#principais-categorias-6": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+
+  "flex-layout.row#fornecedores": {
+    "props": {
+      "blockClass": ["destaque-home", "fornecedores"]
+    },
+    "children": [
+      "flex-layout.col#fornecedores"
+    ]
+  },
+  "flex-layout.col#fornecedores": {
+    "props": {
+      "blockClass": "fornecedores"
+    },
+    "children": [
+      "rich-text#title-fornecedores",
+      "slider-layout#fornecedores"
+    ]
+  },
+  "rich-text#title-fornecedores": {
+    "props": {
+      "text": "## TRABALHAMOS COM OS MELHORES FORNECEDORES",
+      "blockClass": ["title-padrao", "title-fornecedores"]
+    }
+  },
+  "slider-layout#fornecedores": {
+    "children": [
+      "image#fornecedor-1",
+      "image#fornecedor-2",
+      "image#fornecedor-3",
+      "image#fornecedor-4",
+      "image#fornecedor-5",
+      "image#fornecedor-6",
+      "image#fornecedor-7",
+      "image#fornecedor-8",
+      "image#fornecedor-9",
+      "image#fornecedor-10",
+      "image#fornecedor-11",
+      "image#fornecedor-12",
+      "image#fornecedor-13",
+      "image#fornecedor-14",
+      "image#fornecedor-15",
+      "image#fornecedor-16",
+      "image#fornecedor-17",
+      "image#fornecedor-18",
+      "image#fornecedor-19",
+      "image#fornecedor-20"
+    ],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "blockClass": "slider-fornecedores"
+    }
+  },
+  "image#fornecedor-1": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-unilever.png",
+      "alt": "Unilever",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/unilever"
+      }
+    }
+  },
+  "image#fornecedor-2": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-mondelez.png",
+      "alt": "Mondelez",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/mondelez"
+      }
+    }
+  },
+  "image#fornecedor-3": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-diageo.png",
+      "alt": "Diageo",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/diageo"
+      }
+    }
+  },
+  "image#fornecedor-4": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-colgate.png",
+      "alt": "Colgate",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/colgate"
+      }
+    }
+  },
+  "image#fornecedor-5": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-mondial.png",
+      "alt": "Mondial",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/mondial"
+      }
+    }
+  },
+  "image#fornecedor-6": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-alpargatas.png",
+      "alt": "Alpargatas",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/alpargatas"
+      }
+    }
+  },
+  "image#fornecedor-7": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-campo-belo.png",
+      "alt": "Campo Belo",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/campo-belo"
+      }
+    }
+  },
+  "image#fornecedor-8": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-flora.png",
+      "alt": "Flora",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/flora"
+      }
+    }
+  },
+  "image#fornecedor-9": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-fugini.png",
+      "alt": "Fugini",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/fugini"
+      }
+    }
+  },
+  "image#fornecedor-10": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-gune.png",
+      "alt": "Gune",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/gune"
+      }
+    }
+  },
+  "image#fornecedor-11": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-heinz.png",
+      "alt": "Heinz",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/heinz"
+      }
+    }
+  },
+  "image#fornecedor-12": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-leao.png",
+      "alt": "Leão",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/leao"
+      }
+    }
+  },
+  "image#fornecedor-13": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-mabel.png",
+      "alt": "Mabel",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/mabel"
+      }
+    }
+  },
+  "image#fornecedor-14": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-nestle.png",
+      "alt": "Nestlé",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/nestle"
+      }
+    }
+  },
+  "image#fornecedor-15": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-paratudo.png",
+      "alt": "Paratudo",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/paratudo"
+      }
+    }
+  },
+  "image#fornecedor-16": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-pepsico.png",
+      "alt": "Pepsico",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/pepsico"
+      }
+    }
+  },
+  "image#fornecedor-17": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-pernod-ricard.png",
+      "alt": "Pernod Ricard",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/pernod-ricard"
+      }
+    }
+  },
+  "image#fornecedor-18": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-santher.png",
+      "alt": "Santher",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/santher"
+      }
+    }
+  },
+  "image#fornecedor-19": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-seara.png",
+      "alt": "Seara",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/seara"
+      }
+    }
+  },
+  "image#fornecedor-20": {
+    "props": {
+      "src": "assets/estrela-home-fornecedor-ype.png",
+      "alt": "Ypê",
+      "blockClass": "image-fornecedores",
+      "link": {
+        "url": "/ype"
+      }
+    }
+  },
+
+  "flex-layout.row#ofertas": {
+    "props": {
+      "blockClass": ["destaque-home", "ofertas"]
+    },
+    "children": [
+      "flex-layout.col#ofertas"
+    ]
+  },
+  "flex-layout.col#ofertas": {
+    "props": {
+      "blockClass": "destaque-home"
+    },
+    "children": [
+      "rich-text#title-ofertas",
+      "rich-text#title-ofertas-link",
+      "flex-layout.row#shelf-home-1"
+    ]
+  },
+  "rich-text#title-ofertas": {
+    "props": {
+      "text": "## CONFIRA NOSSAS OFERTAS",
+      "blockClass": ["title-padrao", "title-ofertas"]
+    }
+  },
+  "rich-text#title-ofertas-link": {
+    "props": {
+      "blockClass": "ver-mais",
+      "text": "[Ver mais](/lacta)"
+    }
+  },
+  "flex-layout.row#shelf-home-1": {
+    "children": ["list-context.product-list#shelf"]
+  },
+  "list-context.product-list#shelf": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelf": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never"
+    }
+  },
+
+  "flex-layout.row#estrelas": {
+    "props": {
+      "blockClass": ["destaque-home", "estrelas"]
+    },
+    "children": [
+      "flex-layout.col#estrelas"
+    ]
+  },
+  "flex-layout.col#estrelas": {
+    "props": {
+      "blockClass": "destaque-home"
+    },
+    "children": [
+      "rich-text#title-estrelas",
+      "flex-layout.row#estrelas-1",
+      "flex-layout.row#estrelas-2"
+    ]
+  },
+  "rich-text#title-estrelas": {
+    "props": {
+      "text": "## NOSSAS ESTRELAS",
+      "blockClass": ["title-padrao", "title-estrelas"]
+    }
+  },
+  "flex-layout.row#estrelas-1": {
+    "props": {
+      "blockClass": "estrelas-int"
+    },
+    "children": [
+      "image#estrelas-1",
+      "image#estrelas-2",
+      "image#estrelas-3",
+      "image#estrelas-4"
+      // "flex-layout.col#estrelas-1",
+      // "flex-layout.col#estrelas-2",
+      // "flex-layout.col#estrelas-3"
+    ]
+  },
+  "image#estrelas-1": {
+    "props": {
+      "blockClass": "estrelas",
+      "src": "assets/estrela-nossas-estrelas-omo.png",
+      "alt": "Omo",
+      "link": {
+        "url": "/omo"
+      }
+    }
+  },
+  "image#estrelas-2": {
+    "props": {
+      "blockClass": "estrelas",
+      "src": "assets/estrela-nossas-estrelas-sucrilhos.png",
+      "alt": "Sucrilhos",
+      "link": {
+        "url": "/sucrilhos"
+      }
+    }
+  },
+  "image#estrelas-3": {
+    "props": {
+      "blockClass": ["estrelas", "estrelas-central"],
+      "src": "assets/estrela-nossas-estrelas-mondial.png",
+      "alt": "Mondial",
+      "link": {
+        "url": "/mondial"
+      }
+    }
+  },
+  "image#estrelas-4": {
+    "props": {
+      "blockClass": "estrelas",
+      "src": "assets/estrela-nossas-estrelas-lacta.png",
+      "alt": "Lacta",
+      "link": {
+        "url": "/lacta"
+      }
+    }
+  },
+  "flex-layout.row#estrelas-2": {
+    "props": {
+      "blockClass": "estrelas-int-int"
+    },
+    "children": [
+      "image#estrelas-5"
+    ]
+  },
+  "image#estrelas-5": {
+    "props": {
+      "blockClass": "estrelas",
+      "src": "assets/estrela-nossas-estrelas-beefeater.png",
+      "alt": "Beefeater",
+      "link": {
+        "url": "/beefeater"
+      }
+    }
+  },
+
+  "flex-layout.row#ofertas-2": {
+    "props": {
+      "blockClass": ["destaque-home", "ofertas"]
+    },
+    "children": [
+      "flex-layout.col#ofertas-2"
+    ]
+  },
+  "flex-layout.col#ofertas-2": {
+    "props": {
+      "blockClass": "destaque-home"
+    },
+    "children": [
+      "rich-text#title-ofertas-2",
+      "rich-text#title-ofertas-2-link",
+      "flex-layout.row#shelf-home-2"
+    ]
+  },
+  "rich-text#title-ofertas-2": {
+    "props": {
+      "text": "## OFERTAS LACTA",
+      "blockClass": ["title-padrao", "title-ofertas"]
+    }
+  },
+  "rich-text#title-ofertas-2-link": {
+    "props": {
+      "blockClass": "ver-mais",
+      "text": "[Ver mais](/lacta)"
+    }
+  },
+  "flex-layout.row#shelf-home-2": {
+    "children": ["list-context.product-list#shelf"]
+  },
+
+  "flex-layout.row#vantagens": {
+    "props": {
+      "blockClass": ["destaque-home", "vantagens"]
+    },
+    "children": [
+      "flex-layout.col#vantagens"
+    ]
+  },
+  "flex-layout.col#vantagens": {
+    "props": {
+      "blockClass": "destaque-home"
+    },
+    "children": [
+      "rich-text#title-vantagens",
+      "flex-layout.row#vantagens-1"
+    ]
+  },
+  "rich-text#title-vantagens": {
+    "props": {
+      "text": "## VANTAGENS DAS ESTRELAS",
+      "blockClass": ["title-padrao", "title-vantagens"]
+    }
+  },
+  "flex-layout.row#vantagens-1": {
+    "props": {
+      "blockClass": "vantagens-int"
+    },
+    "children": [
+      "slider-layout#vantagens"
+    ]
+  },
+  "slider-layout#vantagens": {
+    "children": [
+      "image#vantagens-1",
+      "image#vantagens-2",
+      "image#vantagens-3",
+      "image#vantagens-4",
+      "image#vantagens-5",
+      "image#vantagens-6",
+      "image#vantagens-7",
+      "image#vantagens-8"
+    ],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "blockClass": "slider-vantagens"
+    }
+  },
+  "image#vantagens-1": {
+    "props": {
+      "blockClass": "vantagens",
+      "src": "assets/estrela-vantagens-2.png",
+      "alt": "Destilados 10% OFF",
+      "link": {
+        "url": "/destilados"
+      }
+    }
+  },
+  "image#vantagens-2": {
+    "props": {
+      "blockClass": "vantagens",
+      "src": "assets/estrela-vantagens-1.png",
+      "alt": "Food Service 10% OFF",
+      "link": {
+        "url": "/food-service"
+      }
+    }
+  },
+  "image#vantagens-3": {
+    "props": {
+      "blockClass": "vantagens",
+      "src": "assets/estrela-vantagens-4.png",
+      "alt": "Perfumaria 10% OFF",
+      "link": {
+        "url": "/perfumaria"
+      }
+    }
+  },
+  "image#vantagens-4": {
+    "props": {
+      "blockClass": "vantagens",
+      "src": "assets/estrela-vantagens-3.png",
+      "alt": "Limpeza 10% OFF",
+      "link": {
+        "url": "/limpeza"
+      }
+    }
+  },
+  "image#vantagens-5": {
+    "props": {
+      "blockClass": "vantagens",
+      "src": "assets/estrela-vantagens-3.png",
+      "alt": "Limpeza 10% OFF",
+      "link": {
+        "url": "/limpeza"
+      }
+    }
+  },
+  "image#vantagens-6": {
+    "props": {
+      "blockClass": "vantagens",
+      "src": "assets/estrela-vantagens-3.png",
+      "alt": "Limpeza 10% OFF",
+      "link": {
+        "url": "/limpeza"
+      }
+    }
+  },
+  "image#vantagens-7": {
+    "props": {
+      "blockClass": "vantagens",
+      "src": "assets/estrela-vantagens-3.png",
+      "alt": "Limpeza 10% OFF",
+      "link": {
+        "url": "/limpeza"
+      }
+    }
+  },
+  "image#vantagens-8": {
+    "props": {
+      "blockClass": "vantagens",
+      "src": "assets/estrela-vantagens-3.png",
+      "alt": "Limpeza 10% OFF",
+      "link": {
+        "url": "/limpeza"
+      }
+    }
+  },
+
+  "flex-layout.row#lancamentos": {
+    "props": {
+      "blockClass": ["destaque-home", "lancamentos"]
+    },
+    "children": [
+      "flex-layout.col#lancamentos"
+    ]
+  },
+  "flex-layout.col#lancamentos": {
+    "props": {
+      "blockClass": "destaque-home"
+    },
+    "children": [
+      "rich-text#title-lancamentos",
+      "rich-text#title-lancamentos-link",
+      "flex-layout.row#shelf-home-3"
+    ]
+  },
+  "rich-text#title-lancamentos": {
+    "props": {
+      "text": "## CONFIRA NOSSOS LANÇAMENTOS",
+      "blockClass": ["title-padrao", "title-lancamentos"]
+    }
+  },
+  "rich-text#title-lancamentos-link": {
+    "props": {
+      "blockClass": "ver-mais",
+      "text": "[Ver mais](/lancamentos)"
+    }
+  },
+  "flex-layout.row#shelf-home-3": {
+    "children": ["list-context.product-list#shelf"]
+  },
+
+  "flex-layout.row#parceiros": {
+    "props": {
+      "blockClass": ["destaque-home", "parceiros"]
+    },
+    "children": [
+      "flex-layout.col#parceiros"
+    ]
+  },
+  "flex-layout.col#parceiros": {
+    "props": {
+      "blockClass": "destaque-home"
+    },
+    "children": [
+      "rich-text#title-parceiros",
+      "flex-layout.row#parceiros-1"
+    ]
+  },
+  "rich-text#title-parceiros": {
+    "props": {
+      "text": "## OFERTAS DE PARCEIROS",
+      "blockClass": ["title-padrao", "title-parceiros"]
+    }
+  },
+  "flex-layout.row#parceiros-1": {
+    "props": {
+      "blockClass": "parceiros-int"
+    },
+    "children": [
+      "image#parceiros-1",
+      "image#parceiros-2",
+      "image#parceiros-3",
+      "image#parceiros-4"
+      // "flex-layout.col#parceiros-1",
+      // "flex-layout.col#parceiros-2",
+      // "flex-layout.col#parceiros-3"
+    ]
+  },
+  "flex-layout.col#parceiros-1": {
+    "props": {
+      "blockClass": "parceiros"
+    },
+    "children": [
+      "image#parceiros-1"
+    ]
+  },
+  "image#parceiros-1": {
+    "props": {
+      "blockClass": "parceiros",
+      "src": "assets/estrela-ofertasparceiros-provisorio1.png",
+      "alt": "Parceiros",
+      "link": {
+        "url": "/parceiros"
+      }
+    }
+  },
+  "flex-layout.col#parceiros-2": {
+    "props": {
+      "blockClass": "parceiros"
+    },
+    "children": [
+      "image#parceiros-2"
+    ]
+  },
+  "image#parceiros-2": {
+    "props": {
+      "blockClass": "parceiros",
+      "src": "assets/estrela-ofertasparceiros-provisorio2.png",
+      "alt": "Parceiros",
+      "link": {
+        "url": "/parceiros"
+      }
+    }
+  },
+  "flex-layout.col#parceiros-3": {
+    "props": {
+      "blockClass": "parceiros"
+    },
+    "children": [
+      "flex-layout.row#parceiros-3-1",
+      "flex-layout.row#parceiros-3-2"
+    ]
+  },
+  "flex-layout.row#parceiros-3-1": {
+    "props": {
+      "blockClass": "parceiros-interna"
+    },
+    "children": [
+      "image#parceiros-3"
+    ]
+  },
+  "image#parceiros-3": {
+    "props": {
+      "blockClass": "parceiros",
+      "src": "assets/estrela-ofertasparceiros-provisorio3.png",
+      "alt": "Parceiros",
+      "link": {
+        "url": "/parceiros"
+      }
+    }
+  },
+  "flex-layout.row#parceiros-3-2": {
+    "props": {
+      "blockClass": "parceiros-interna"
+    },
+    "children": [
+      "image#parceiros-4"
+    ]
+  },
+  "image#parceiros-4": {
+    "props": {
+      "blockClass": "parceiros",
+      "src": "assets/estrela-ofertasparceiros-provisorio4.png",
+      "alt": "Parceiros",
+      "link": {
+        "url": "/parceiros"
+      }
+    }
+  }
+}

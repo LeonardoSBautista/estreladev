@@ -1,0 +1,46 @@
+.menuIcon{
+    width:19px;
+    height:13px;
+}
+.openIconContainer{
+    padding:10px 20px 10px 15px;
+}
+.drawerHeader{
+    position: absolute;
+    right: 35px;
+    top:0;
+    height:100%;
+    align-items: flex-start;
+}
+.closeIconButton{
+    padding:10px;
+    font-size:20px;
+    color:#fff;
+    height:100%;
+    align-items: flex-start;
+    display: flex;
+}
+.drawerContent{
+    height:100%;
+    width:85%;
+    background-color:#fff;
+}
+.drawer{
+    width:100% !important;
+    background-color:transparent;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+    .menuIcon{
+        width:21px;
+        height:20px;
+    }
+    .openIconContainer{
+        padding:8px 20px 15px 18px;
+    }
+    .childrenContainer{
+        position:relative;
+        height:100%;
+    }
+}

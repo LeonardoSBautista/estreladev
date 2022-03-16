@@ -1,0 +1,23 @@
+.specificationName{
+  margin:0;
+  font-size:11px;
+  line-height:14px;
+  color:#303030;
+  text-transform:capitalize;
+  text-align:left;
+  font-family:"bold";
+  display:inline-block;
+  padding:0;
+  width:50% !important;
+  vertical-align:middle;
+}
+.specificationValue{
+  margin:0;
+  font-size:11px;
+  line-height:14px;
+  color:#303030;
+  display:inline-block;
+  padding:0;
+  width:50% !important;
+  vertical-align:middle;
+}

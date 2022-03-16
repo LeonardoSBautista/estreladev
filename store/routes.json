@@ -1,0 +1,32 @@
+{
+  "store.custom#cadastro": {
+    "path": "/cadastro"
+  },
+  "store.custom#nossa-estrela": {
+    "path": "/nossa-estrela"
+  },
+  "store.custom#politica-de-pagamento": {
+    "path": "/politica-de-pagamento"
+  },
+  "store.custom#politica-de-privacidade": {
+    "path": "/politica-de-privacidade"
+  },
+  "store.custom#politica-de-devolucao": {
+    "path": "/politica-de-devolucao"
+  },
+  "store.custom#fale-conosco": {
+    "path": "/fale-conosco"
+  },
+  "store.custom#politica-de-uso": {
+    "path": "/politica-de-uso"
+  },
+  "store.custom#entrega-e-recebimento": {
+    "path": "/entrega-e-recebimento"
+  },
+  "store.custom#product-comparison-list": {
+    "path": "/product-comparison"
+  },
+  "store.custom#authorization": {
+    "path": "/authorization"
+  }
+}
